@@ -1,0 +1,41 @@
+<div class="sidepanel" [class.collapsed]="isCollapsed">
+    <div class="logo-container">
+        <h2>Rentyl</h2>
+        <button class="menubtn" (click)="railMenu()">
+            <span class="material-symbols-rounded fsize coloredmenu">dehaze</span>
+        </button>
+    </div>
+    <nav>
+
+        <div class="btns-container">
+            <button class="sidebar-btn">
+                <span class="material-symbols-rounded fsize">dashboard</span>
+                <label class="hiddenlabel">Dashboard</label>
+            </button>
+            <button class="sidebar-btn">
+                <span class="material-symbols-rounded fsize">settings_account_box</span>
+                <label class="hiddenlabel">Master Settings Master Settings</label>
+            </button>
+            <button class="sidebar-btn">
+                <span class="material-symbols-rounded fsize">currency_exchange</span>
+                <label class="hiddenlabel">Transaction</label>
+            </button>
+            <button class="sidebar-btn">
+                <span class="material-symbols-rounded fsize">handshake</span>
+                <label class="hiddenlabel">Services</label>
+            </button>
+        </div>
+
+    </nav>
+    <div class="choose-theme">
+        <button (click)="onToggleClick()" aria-label="Toggle Theme" class="themebtn">
+            <ng-container *ngIf="currentTheme === 'light'">
+                <span class="material-symbols-rounded fsize">dark_mode</span>
+            </ng-container>
+
+            <ng-container *ngIf="currentTheme === 'dark'">
+                <span class="material-symbols-rounded fsize">light_mode</span>
+            </ng-container>
+        </button>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+header{
+    position: sticky;
+    padding-block: 16px;
+}
+
+header h2{
+    margin: 0px;
+}
+
+.header-panel{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 8px;
+    margin-top: 16px;
+    overflow: auto;
+}
+
+.panel-tabs{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 12px;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: transform 0.3s ease-in, background-color 0.3s ease-in, color 0.3s ease-in;
+    color: var(--s-text-color);
+    white-space: nowrap;
+}
+
+.panel-tabs:hover{
+    background-color: var(--hover-color);
+    color: var(--text-color);
+}
+
+.panel-tabs:focus{
+    background-color: var(--hover-color);
+    color: var(--primary-color);
+}
