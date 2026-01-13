@@ -1,41 +1,98 @@
 <div class="sidepanel" [class.collapsed]="isCollapsed">
     <div class="logo-container">
-        <h2>Rentyl</h2>
+        <h2>
+            <a href="/">
+                Rentyl
+            </a>
+        </h2>
         <button class="menubtn" (click)="railMenu()">
-            <span class="material-symbols-rounded fsize coloredmenu">dehaze</span>
+            <span class="material-symbols-rounded icon">menu</span>
         </button>
     </div>
-    <nav>
 
+    <nav>
         <div class="btns-container">
-            <button class="sidebar-btn">
-                <span class="material-symbols-rounded fsize">dashboard</span>
+            <button class="sidebar-btn sidebar-tooltip" routerLink="/dashboard" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
+                <span class="material-symbols-rounded icon">dashboard</span>
                 <label class="hiddenlabel">Dashboard</label>
+                <span class="tooltip-text" *ngIf="isCollapsed">
+                    Dashboard
+                </span>
             </button>
-            <button class="sidebar-btn">
-                <span class="material-symbols-rounded fsize">settings_account_box</span>
-                <label class="hiddenlabel">Master Settings</label>
+            <button class="sidebar-btn sidebar-tooltip" routerLink="/properties" routerLinkActive="active">
+                <span class="material-symbols-rounded icon">home_and_garden</span>
+                <label class="hiddenlabel">Properties</label>
+                <span class="tooltip-text" *ngIf="isCollapsed">
+                    My Properties
+                </span>
             </button>
-            <button class="sidebar-btn">
-                <span class="material-symbols-rounded fsize">currency_exchange</span>
-                <label class="hiddenlabel">Transaction</label>
+            <button class="sidebar-btn sidebar-tooltip" routerLink="/tenants" routerLinkActive="active">
+                <span class="material-symbols-rounded icon">contact_page</span>
+                <label class="hiddenlabel">Tenants</label>
+                <span class="tooltip-text" *ngIf="isCollapsed">
+                    Tenants
+                </span>
             </button>
-            <button class="sidebar-btn">
-                <span class="material-symbols-rounded fsize">handshake</span>
-                <label class="hiddenlabel">Services</label>
+            <button class="sidebar-btn sidebar-tooltip" routerLink="/rents-and-payments" routerLinkActive="active">
+                <span class="material-symbols-rounded icon">receipt_long</span>
+                <label class="hiddenlabel">Rent & Payments</label>
+                <span class="tooltip-text" *ngIf="isCollapsed">
+                    Rent & Payments
+                </span>
+            </button>
+            <button class="sidebar-btn sidebar-tooltip" routerLink="/expenses" routerLinkActive="active">
+                <span class="material-symbols-rounded icon">payments</span>
+                <label class="hiddenlabel">Expenses</label>
+                <span class="tooltip-text" *ngIf="isCollapsed">
+                    Expenses
+                </span>
+            </button>
+            <button class="sidebar-btn sidebar-tooltip" routerLink="/maintenance" routerLinkActive="active">
+                <span class="material-symbols-rounded icon">construction</span>
+                <label class="hiddenlabel">Maintenance</label>
+                <span class="tooltip-text" *ngIf="isCollapsed">
+                    Maintenance
+                </span>
+            </button>
+            <button class="sidebar-btn sidebar-tooltip" routerLink="/reports" routerLinkActive="active">
+                <span class="material-symbols-rounded icon">note_stack</span>
+                <label class="hiddenlabel">Reports</label>
+                <span class="tooltip-text" *ngIf="isCollapsed">
+                    Reports
+                </span>
+            </button>
+            <button class="sidebar-btn sidebar-tooltip" routerLink="/documents" routerLinkActive="active">
+                <span class="material-symbols-rounded icon">article</span>
+                <label class="hiddenlabel">Documents</label>
+                <span class="tooltip-text" *ngIf="isCollapsed">
+                    Documents
+                </span>
+            </button>
+            <button class="sidebar-btn sidebar-tooltip" routerLink="/settings" routerLinkActive="active">
+                <span class="material-symbols-rounded icon">settings_account_box</span>
+                <label class="hiddenlabel">Settings</label>
+                <span class="tooltip-text" *ngIf="isCollapsed">
+                    Settings
+                </span>
+            </button>
+        </div>
+
+        <div class="bottom-set">
+
+
+            <button (click)="onToggleClick()" aria-label="Toggle Theme" class="themebtn">
+                <ng-container *ngIf="currentTheme === 'light'">
+                    <span class="material-symbols-rounded icon">dark_mode</span>
+                </ng-container>
+
+                <ng-container *ngIf="currentTheme === 'dark'">
+                    <span class="material-symbols-rounded icon">light_mode</span>
+                </ng-container>
             </button>
         </div>
 
     </nav>
-    <div class="choose-theme">
-        <button (click)="onToggleClick()" aria-label="Toggle Theme" class="themebtn">
-            <ng-container *ngIf="currentTheme === 'light'">
-                <span class="material-symbols-rounded fsize">dark_mode</span>
-            </ng-container>
 
-            <ng-container *ngIf="currentTheme === 'dark'">
-                <span class="material-symbols-rounded fsize">light_mode</span>
-            </ng-container>
-        </button>
-    </div>
+
 </div>

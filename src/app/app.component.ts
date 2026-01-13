@@ -1,20 +1,28 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, Routes } from '@angular/router';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './components/header/header.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { PropertiesComponent } from './pages/properties/properties.component';
+import { RentsAndPaymentsComponent } from './pages/rents-and-payments/rents-and-payments.component';
+import { ExpensesComponent } from './pages/expenses/expenses.component';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, SidebarComponent, HomeComponent, HeaderComponent],
+  imports: [RouterOutlet, SidebarComponent, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
+
+
 export class AppComponent {
   title = 'rentyl';
 
   currentTheme: 'light' | 'dark' = 'light';
+
+
 
   ngOnInit(): void {
     const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
@@ -23,9 +31,11 @@ export class AppComponent {
     document.documentElement.setAttribute('data-theme', this.currentTheme);
   }
 
-  toggleTheme(): void{
+  toggleTheme(): void {
     this.currentTheme = this.currentTheme === 'dark' ? 'light' : 'dark';
     document.documentElement.setAttribute('data-theme', this.currentTheme);
     localStorage.setItem('theme', this.currentTheme);
   }
+
+
 }
