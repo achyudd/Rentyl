@@ -32,7 +32,9 @@ $rentyl-theme: mat.define-light-theme((color: (primary: $rentyl-primary,
 @include mat.all-component-themes($rentyl-theme);
 
 
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
 html,
