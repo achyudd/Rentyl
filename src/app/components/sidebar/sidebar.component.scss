@@ -177,6 +177,7 @@ nav {
     top: 50%;
     transform: translateY(-50%);
     margin-left: 10px;
+    z-index: 100;
 
     background: var(--secondary-bg-color);
     color: var(--text-color);

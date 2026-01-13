@@ -13,15 +13,30 @@
             <img mat-card-image src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
 
             <div>
-                <mat-card-title>Property name</mat-card-title>
+
+                <mat-card-title class="propertytitle">
+                    <label for="title">Property name</label>
+
+              
+                        <div class="statusindicator">
+                            <div class="statusdot"></div>
+                            <span class="statuslabel">Active</span>
+                        </div>
+     
+                </mat-card-title>
                 <mat-card-subtitle>Address</mat-card-subtitle>
+
+
                 <div class="flex flex-col">
                     <span>Units: 7/10 filled</span>
-                    <span>1,25,000/month</span>
-
                 </div>
-                <span>Active</span>
-                <p> This modern villa offers luxury living with a spacious interior.</p>
+
+                <div class="propertyamount">
+                    <label>1,25,000/month</label>
+                </div>
+
+
+
 
                 <mat-card-actions class="propertycard-footer">
                     <button mat-button color="primary">View Details</button>
