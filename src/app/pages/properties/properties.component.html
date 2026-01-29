@@ -7,45 +7,43 @@
         <span class="btnlabel">Add Property</span>
     </button>
 </div>
-<div class="propertyard-wrapper">
+<div class="propertycard-wrapper">
     <mat-card class="property-card">
         <div class="propertycard-container">
             <img mat-card-image src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
 
-            <div>
+            <div class="flex flex-col justify-between gap-4">
 
-                <mat-card-title class="propertytitle">
-                    <label for="title">Property name</label>
+                <div class="cardcontentswrapper">
+                    <mat-card-title class="propertytitle">
+                        <label for="title">Property name</label>
 
-              
+
                         <div class="statusindicator">
                             <div class="statusdot"></div>
                             <span class="statuslabel">Active</span>
                         </div>
-     
-                </mat-card-title>
-                <mat-card-subtitle>Address</mat-card-subtitle>
+
+                    </mat-card-title>
+                    <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
 
 
-                <div class="flex flex-col">
-                    <span>Units: 7/10 filled</span>
+                    <div class="flex flex-col mb-2">
+                        <span>Units: 7/10 filled</span>
+                    </div>
+
+                    <div class="propertyamount">
+                        <label>1,25,000/month</label>
+                    </div>
                 </div>
-
-                <div class="propertyamount">
-                    <label>1,25,000/month</label>
-                </div>
-
-
-
 
                 <mat-card-actions class="propertycard-footer">
                     <button mat-button color="primary">View Details</button>
-                    <button mat-button color="secondary">Edit</button>
+                    <button mat-button color="secondary" class="borderedbtn">Edit</button>
                 </mat-card-actions>
 
             </div>
         </div>
     </mat-card>
-
 
 </div>
