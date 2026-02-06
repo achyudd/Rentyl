@@ -1,49 +1,97 @@
-<div class="flex justify-end items-start gap-3">
-    <mat-form-field>
-        <input matInput placeholder="Search properties">
-    </mat-form-field>
-    <button mat-flat-button color="primary">
-        <span class="material-symbols-rounded btnicon">add</span>
-        <span class="btnlabel">Add Property</span>
-    </button>
-</div>
-<div class="propertycard-wrapper">
-    <mat-card class="property-card">
-        <div class="propertycard-container">
-            <img mat-card-image src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+<mat-tab-group>
 
-            <div class="flex flex-col justify-between gap-4">
-
-                <div class="cardcontentswrapper">
-                    <mat-card-title class="propertytitle">
-                        <label for="title">Property name</label>
+    <mat-tab label="Apartments">
 
 
-                        <div class="statusindicator">
-                            <div class="statusdot"></div>
-                            <span class="statuslabel">Active</span>
-                        </div>
-
-                    </mat-card-title>
-                    <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
-
-
-                    <div class="flex flex-col mb-2">
-                        <span>Units: 7/10 filled</span>
-                    </div>
-
-                    <div class="propertyamount">
-                        <label>1,25,000/month</label>
-                    </div>
-                </div>
-
-                <mat-card-actions class="propertycard-footer">
-                    <button mat-button color="primary">View Details</button>
-                    <button mat-button color="secondary" class="borderedbtn">Edit</button>
-                </mat-card-actions>
-
+        <div class="flex justify-between items-start gap-3 mt-3">
+            <div class="flex justify-start items-start mr-auto">
+                <mat-form-field appearance="outline">
+                    <mat-select>
+                        <mat-option value="" disabled selected>
+                            Select a city
+                        </mat-option>
+                        <mat-option value="blr">Bangalore</mat-option>
+                        <mat-option value="hyd">Hyderabad</mat-option>
+                        <mat-option value="chn">Chennai</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="flex justify-end items-start gap-3 ml-auto">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Search properties">
+                </mat-form-field>
+                <button mat-flat-button color="primary">
+                    <span class="material-symbols-rounded btnicon">add</span>
+                    <span class="btnlabel">Add Property</span>
+                </button>
             </div>
         </div>
-    </mat-card>
 
-</div>
+        <!-- CARD CONTAINER  -->
+        <div class="propertycard_wrapper">
+
+            <!-- CARD  -->
+            <mat-card class="property_card">
+                <div class="propertycard_container">
+                    <!-- STATUS INDICATOR  -->
+                    <div class="statusindicator">
+                        <div class="statusdot"></div>
+                        <span class="statuslabel">Active</span>
+                    </div>
+                    <!-- CARD IMAGE  -->
+                    <div class="propertycard_image">
+                        <img mat-card-image
+                            src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+                    </div>
+                    <div class="flex flex-col justify-between gap-4">
+
+                        <div class="cardcontentswrapper">
+                            <!-- CARD TITLE  -->
+                            <mat-card-title class="propertytitle">
+                                <label for="title">Property name</label>
+                            </mat-card-title>
+                            <!-- CARD SUBTITLE  -->
+                            <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
+
+                            <!-- UNITS -->
+                            <div class="flex flex-col mb-2">
+                                <span>Units: 7/10 filled</span>
+                            </div>
+
+                            <!-- AMOUNT  -->
+                            <div class="propertyamount">
+                                <label>1,25,000/month</label>
+                            </div>
+                        </div>
+
+                        <!-- ACTIONS ROW  -->
+                        <!-- <mat-card-actions class="propertycard_footer">
+                            <button mat-button color="primary" class="secondarylightbtn">View Details</button>
+                        </mat-card-actions> -->
+
+                    </div>
+                </div>
+            </mat-card>
+
+
+        </div>
+
+    </mat-tab>
+
+    <mat-tab label="Hostels">
+        <p>Hostels content goes here.</p>
+    </mat-tab>
+
+    <mat-tab label="Shops">
+        <p>Shops content goes here.</p>
+    </mat-tab>
+
+    <mat-tab label="Resorts">
+        <p>Resorts content goes here.</p>
+    </mat-tab>
+
+    <mat-tab label="Houses">
+        <p>Houses content goes here.</p>
+    </mat-tab>
+
+</mat-tab-group>
