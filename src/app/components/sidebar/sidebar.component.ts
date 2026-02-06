@@ -7,17 +7,17 @@ import { RouterLinkActive } from "@angular/router";
 
 
 @Component({
-  selector: 'app-sidebar',
-  standalone: true,
-  imports: [
-    NgIf,
-    CommonModule,
-    ...MATERIAL_IMPORTS,
-    RouterLink,
-    RouterLinkActive
-],
-  templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.scss'
+    selector: 'app-sidebar',
+      standalone: true,
+    imports: [
+        NgIf,
+        CommonModule,
+        ...MATERIAL_IMPORTS,
+        RouterLink,
+        RouterLinkActive
+    ],
+    templateUrl: './sidebar.component.html',
+    styleUrl: './sidebar.component.scss'
 })
 export class SidebarComponent {
 
