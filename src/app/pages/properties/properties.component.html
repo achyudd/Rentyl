@@ -5,16 +5,20 @@
 
         <div class="flex justify-between items-start gap-3 mt-3">
             <div class="flex justify-start items-start mr-auto">
-                <mat-form-field appearance="outline">
-                    <mat-select>
-                        <mat-option value="" disabled selected>
-                            Select a city
-                        </mat-option>
-                        <mat-option value="blr">Bangalore</mat-option>
-                        <mat-option value="hyd">Hyderabad</mat-option>
-                        <mat-option value="chn">Chennai</mat-option>
-                    </mat-select>
-                </mat-form-field>
+                <div class="flex flex-col">
+                    <mat-label>Select location</mat-label>
+                    <mat-form-field appearance="outline">
+                        <mat-select>
+                            <mat-option value="" disabled selected>
+                                Select a city
+                            </mat-option>
+                            <mat-option value="blr">All</mat-option>
+                            <mat-option value="blr">Bangalore</mat-option>
+                            <mat-option value="hyd">Hyderabad</mat-option>
+                            <mat-option value="chn">Chennai</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
             </div>
             <div class="flex justify-end items-start gap-3 ml-auto">
                 <mat-form-field appearance="outline">
