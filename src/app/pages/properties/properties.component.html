@@ -2,9 +2,9 @@
 
     <mat-tab label="Apartments">
 
-
-        <div class="flex justify-between items-start gap-3 mt-3">
-            <div class="flex justify-start items-start mr-auto">
+        <!-- CONTROLS ROW  -->
+        <div class="flex justify-between items-end gap-3 mt-2 mb-3">
+            <div class="flex justify-start items-end mr-auto">
                 <div class="flex flex-col">
                     <mat-label>Select location</mat-label>
                     <mat-form-field appearance="outline">
@@ -20,7 +20,7 @@
                     </mat-form-field>
                 </div>
             </div>
-            <div class="flex justify-end items-start gap-3 ml-auto">
+            <div class="flex justify-end items-end gap-3 ml-auto">
                 <mat-form-field appearance="outline">
                     <input matInput placeholder="Search properties">
                 </mat-form-field>
@@ -32,58 +32,992 @@
         </div>
 
         <!-- CARD CONTAINER  -->
-        <div class="propertycard_wrapper">
+        <div class="page_scroll">
+            <div class="propertycard_wrapper">
 
-            <!-- CARD  -->
-            <mat-card class="property_card">
-                <div class="propertycard_container">
-                    <!-- STATUS INDICATOR  -->
-                    <div class="statusindicator">
-                        <div class="statusdot"></div>
-                        <span class="statuslabel">Active</span>
-                    </div>
-                    <!-- CARD IMAGE  -->
-                    <div class="propertycard_image">
-                        <img mat-card-image
-                            src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
-                    </div>
-                    <div class="flex flex-col justify-between gap-4">
-
-                        <div class="cardcontentswrapper">
-                            <!-- CARD TITLE  -->
-                            <mat-card-title class="propertytitle">
-                                <label for="title">Property name</label>
-                            </mat-card-title>
-                            <!-- CARD SUBTITLE  -->
-                            <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
-
-                            <!-- UNITS -->
-                            <div class="flex flex-col mb-2">
-                                <span>Units: 7/10 filled</span>
-                            </div>
-
-                            <!-- AMOUNT  -->
-                            <div class="propertyamount">
-                                <label>1,25,000/month</label>
-                            </div>
+                <!-- CARD  -->
+                <mat-card class="property_card">
+                    <div class="propertycard_container">
+                        <!-- STATUS INDICATOR  -->
+                        <div class="statusindicator">
+                            <div class="statusdot"></div>
+                            <span class="statuslabel">Active</span>
                         </div>
+                        <!-- CARD IMAGE  -->
+                        <div class="propertycard_image">
+                            <img mat-card-image
+                                src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+                        </div>
+                        <div class="flex flex-col justify-between gap-4">
 
-                        <!-- ACTIONS ROW  -->
-                        <!-- <mat-card-actions class="propertycard_footer">
+                            <div class="cardcontentswrapper">
+                                <!-- CARD TITLE  -->
+                                <mat-card-title class="propertytitle">
+                                    <label for="title">Property name</label>
+                                </mat-card-title>
+                                <!-- CARD SUBTITLE  -->
+                                <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
+                                <!-- UNITS -->
+                                <div class="flex flex-col mb-2">
+                                    <span>Units: 7/10 filled</span>
+                                </div>
+                                <!-- AMOUNT  -->
+                                <div class="propertyamount">
+                                    <label>1,25,000/month</label>
+                                </div>
+                            </div>
+                            <!-- ACTIONS ROW  -->
+                            <!-- <mat-card-actions class="propertycard_footer">
                             <button mat-button color="primary" class="secondarylightbtn">View Details</button>
                         </mat-card-actions> -->
-
+                        </div>
                     </div>
-                </div>
-            </mat-card>
+                </mat-card>
+
+                              <!-- CARD  -->
+                <mat-card class="property_card">
+                    <div class="propertycard_container">
+                        <!-- STATUS INDICATOR  -->
+                        <div class="statusindicator">
+                            <div class="statusdot"></div>
+                            <span class="statuslabel">Active</span>
+                        </div>
+                        <!-- CARD IMAGE  -->
+                        <div class="propertycard_image">
+                            <img mat-card-image
+                                src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+                        </div>
+                        <div class="flex flex-col justify-between gap-4">
+
+                            <div class="cardcontentswrapper">
+                                <!-- CARD TITLE  -->
+                                <mat-card-title class="propertytitle">
+                                    <label for="title">Property name</label>
+                                </mat-card-title>
+                                <!-- CARD SUBTITLE  -->
+                                <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
+                                <!-- UNITS -->
+                                <div class="flex flex-col mb-2">
+                                    <span>Units: 7/10 filled</span>
+                                </div>
+                                <!-- AMOUNT  -->
+                                <div class="propertyamount">
+                                    <label>1,25,000/month</label>
+                                </div>
+                            </div>
+                            <!-- ACTIONS ROW  -->
+                            <!-- <mat-card-actions class="propertycard_footer">
+                            <button mat-button color="primary" class="secondarylightbtn">View Details</button>
+                        </mat-card-actions> -->
+                        </div>
+                    </div>
+                </mat-card>
+
+                              <!-- CARD  -->
+                <mat-card class="property_card">
+                    <div class="propertycard_container">
+                        <!-- STATUS INDICATOR  -->
+                        <div class="statusindicator">
+                            <div class="statusdot"></div>
+                            <span class="statuslabel">Active</span>
+                        </div>
+                        <!-- CARD IMAGE  -->
+                        <div class="propertycard_image">
+                            <img mat-card-image
+                                src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+                        </div>
+                        <div class="flex flex-col justify-between gap-4">
+
+                            <div class="cardcontentswrapper">
+                                <!-- CARD TITLE  -->
+                                <mat-card-title class="propertytitle">
+                                    <label for="title">Property name</label>
+                                </mat-card-title>
+                                <!-- CARD SUBTITLE  -->
+                                <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
+                                <!-- UNITS -->
+                                <div class="flex flex-col mb-2">
+                                    <span>Units: 7/10 filled</span>
+                                </div>
+                                <!-- AMOUNT  -->
+                                <div class="propertyamount">
+                                    <label>1,25,000/month</label>
+                                </div>
+                            </div>
+                            <!-- ACTIONS ROW  -->
+                            <!-- <mat-card-actions class="propertycard_footer">
+                            <button mat-button color="primary" class="secondarylightbtn">View Details</button>
+                        </mat-card-actions> -->
+                        </div>
+                    </div>
+                </mat-card>
+
+                              <!-- CARD  -->
+                <mat-card class="property_card">
+                    <div class="propertycard_container">
+                        <!-- STATUS INDICATOR  -->
+                        <div class="statusindicator">
+                            <div class="statusdot"></div>
+                            <span class="statuslabel">Active</span>
+                        </div>
+                        <!-- CARD IMAGE  -->
+                        <div class="propertycard_image">
+                            <img mat-card-image
+                                src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+                        </div>
+                        <div class="flex flex-col justify-between gap-4">
+
+                            <div class="cardcontentswrapper">
+                                <!-- CARD TITLE  -->
+                                <mat-card-title class="propertytitle">
+                                    <label for="title">Property name</label>
+                                </mat-card-title>
+                                <!-- CARD SUBTITLE  -->
+                                <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
+                                <!-- UNITS -->
+                                <div class="flex flex-col mb-2">
+                                    <span>Units: 7/10 filled</span>
+                                </div>
+                                <!-- AMOUNT  -->
+                                <div class="propertyamount">
+                                    <label>1,25,000/month</label>
+                                </div>
+                            </div>
+                            <!-- ACTIONS ROW  -->
+                            <!-- <mat-card-actions class="propertycard_footer">
+                            <button mat-button color="primary" class="secondarylightbtn">View Details</button>
+                        </mat-card-actions> -->
+                        </div>
+                    </div>
+                </mat-card>
+
+                              <!-- CARD  -->
+                <mat-card class="property_card">
+                    <div class="propertycard_container">
+                        <!-- STATUS INDICATOR  -->
+                        <div class="statusindicator">
+                            <div class="statusdot"></div>
+                            <span class="statuslabel">Active</span>
+                        </div>
+                        <!-- CARD IMAGE  -->
+                        <div class="propertycard_image">
+                            <img mat-card-image
+                                src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+                        </div>
+                        <div class="flex flex-col justify-between gap-4">
+
+                            <div class="cardcontentswrapper">
+                                <!-- CARD TITLE  -->
+                                <mat-card-title class="propertytitle">
+                                    <label for="title">Property name</label>
+                                </mat-card-title>
+                                <!-- CARD SUBTITLE  -->
+                                <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
+                                <!-- UNITS -->
+                                <div class="flex flex-col mb-2">
+                                    <span>Units: 7/10 filled</span>
+                                </div>
+                                <!-- AMOUNT  -->
+                                <div class="propertyamount">
+                                    <label>1,25,000/month</label>
+                                </div>
+                            </div>
+                            <!-- ACTIONS ROW  -->
+                            <!-- <mat-card-actions class="propertycard_footer">
+                            <button mat-button color="primary" class="secondarylightbtn">View Details</button>
+                        </mat-card-actions> -->
+                        </div>
+                    </div>
+                </mat-card>
+
+                              <!-- CARD  -->
+                <mat-card class="property_card">
+                    <div class="propertycard_container">
+                        <!-- STATUS INDICATOR  -->
+                        <div class="statusindicator">
+                            <div class="statusdot"></div>
+                            <span class="statuslabel">Active</span>
+                        </div>
+                        <!-- CARD IMAGE  -->
+                        <div class="propertycard_image">
+                            <img mat-card-image
+                                src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+                        </div>
+                        <div class="flex flex-col justify-between gap-4">
+
+                            <div class="cardcontentswrapper">
+                                <!-- CARD TITLE  -->
+                                <mat-card-title class="propertytitle">
+                                    <label for="title">Property name</label>
+                                </mat-card-title>
+                                <!-- CARD SUBTITLE  -->
+                                <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
+                                <!-- UNITS -->
+                                <div class="flex flex-col mb-2">
+                                    <span>Units: 7/10 filled</span>
+                                </div>
+                                <!-- AMOUNT  -->
+                                <div class="propertyamount">
+                                    <label>1,25,000/month</label>
+                                </div>
+                            </div>
+                            <!-- ACTIONS ROW  -->
+                            <!-- <mat-card-actions class="propertycard_footer">
+                            <button mat-button color="primary" class="secondarylightbtn">View Details</button>
+                        </mat-card-actions> -->
+                        </div>
+                    </div>
+                </mat-card>
+
+                              <!-- CARD  -->
+                <mat-card class="property_card">
+                    <div class="propertycard_container">
+                        <!-- STATUS INDICATOR  -->
+                        <div class="statusindicator">
+                            <div class="statusdot"></div>
+                            <span class="statuslabel">Active</span>
+                        </div>
+                        <!-- CARD IMAGE  -->
+                        <div class="propertycard_image">
+                            <img mat-card-image
+                                src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+                        </div>
+                        <div class="flex flex-col justify-between gap-4">
+
+                            <div class="cardcontentswrapper">
+                                <!-- CARD TITLE  -->
+                                <mat-card-title class="propertytitle">
+                                    <label for="title">Property name</label>
+                                </mat-card-title>
+                                <!-- CARD SUBTITLE  -->
+                                <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
+                                <!-- UNITS -->
+                                <div class="flex flex-col mb-2">
+                                    <span>Units: 7/10 filled</span>
+                                </div>
+                                <!-- AMOUNT  -->
+                                <div class="propertyamount">
+                                    <label>1,25,000/month</label>
+                                </div>
+                            </div>
+                            <!-- ACTIONS ROW  -->
+                            <!-- <mat-card-actions class="propertycard_footer">
+                            <button mat-button color="primary" class="secondarylightbtn">View Details</button>
+                        </mat-card-actions> -->
+                        </div>
+                    </div>
+                </mat-card>
+
+                              <!-- CARD  -->
+                <mat-card class="property_card">
+                    <div class="propertycard_container">
+                        <!-- STATUS INDICATOR  -->
+                        <div class="statusindicator">
+                            <div class="statusdot"></div>
+                            <span class="statuslabel">Active</span>
+                        </div>
+                        <!-- CARD IMAGE  -->
+                        <div class="propertycard_image">
+                            <img mat-card-image
+                                src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+                        </div>
+                        <div class="flex flex-col justify-between gap-4">
+
+                            <div class="cardcontentswrapper">
+                                <!-- CARD TITLE  -->
+                                <mat-card-title class="propertytitle">
+                                    <label for="title">Property name</label>
+                                </mat-card-title>
+                                <!-- CARD SUBTITLE  -->
+                                <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
+                                <!-- UNITS -->
+                                <div class="flex flex-col mb-2">
+                                    <span>Units: 7/10 filled</span>
+                                </div>
+                                <!-- AMOUNT  -->
+                                <div class="propertyamount">
+                                    <label>1,25,000/month</label>
+                                </div>
+                            </div>
+                            <!-- ACTIONS ROW  -->
+                            <!-- <mat-card-actions class="propertycard_footer">
+                            <button mat-button color="primary" class="secondarylightbtn">View Details</button>
+                        </mat-card-actions> -->
+                        </div>
+                    </div>
+                </mat-card>
+
+                              <!-- CARD  -->
+                <mat-card class="property_card">
+                    <div class="propertycard_container">
+                        <!-- STATUS INDICATOR  -->
+                        <div class="statusindicator">
+                            <div class="statusdot"></div>
+                            <span class="statuslabel">Active</span>
+                        </div>
+                        <!-- CARD IMAGE  -->
+                        <div class="propertycard_image">
+                            <img mat-card-image
+                                src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+                        </div>
+                        <div class="flex flex-col justify-between gap-4">
+
+                            <div class="cardcontentswrapper">
+                                <!-- CARD TITLE  -->
+                                <mat-card-title class="propertytitle">
+                                    <label for="title">Property name</label>
+                                </mat-card-title>
+                                <!-- CARD SUBTITLE  -->
+                                <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
+                                <!-- UNITS -->
+                                <div class="flex flex-col mb-2">
+                                    <span>Units: 7/10 filled</span>
+                                </div>
+                                <!-- AMOUNT  -->
+                                <div class="propertyamount">
+                                    <label>1,25,000/month</label>
+                                </div>
+                            </div>
+                            <!-- ACTIONS ROW  -->
+                            <!-- <mat-card-actions class="propertycard_footer">
+                            <button mat-button color="primary" class="secondarylightbtn">View Details</button>
+                        </mat-card-actions> -->
+                        </div>
+                    </div>
+                </mat-card>
+
+                              <!-- CARD  -->
+                <mat-card class="property_card">
+                    <div class="propertycard_container">
+                        <!-- STATUS INDICATOR  -->
+                        <div class="statusindicator">
+                            <div class="statusdot"></div>
+                            <span class="statuslabel">Active</span>
+                        </div>
+                        <!-- CARD IMAGE  -->
+                        <div class="propertycard_image">
+                            <img mat-card-image
+                                src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+                        </div>
+                        <div class="flex flex-col justify-between gap-4">
+
+                            <div class="cardcontentswrapper">
+                                <!-- CARD TITLE  -->
+                                <mat-card-title class="propertytitle">
+                                    <label for="title">Property name</label>
+                                </mat-card-title>
+                                <!-- CARD SUBTITLE  -->
+                                <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
+                                <!-- UNITS -->
+                                <div class="flex flex-col mb-2">
+                                    <span>Units: 7/10 filled</span>
+                                </div>
+                                <!-- AMOUNT  -->
+                                <div class="propertyamount">
+                                    <label>1,25,000/month</label>
+                                </div>
+                            </div>
+                            <!-- ACTIONS ROW  -->
+                            <!-- <mat-card-actions class="propertycard_footer">
+                            <button mat-button color="primary" class="secondarylightbtn">View Details</button>
+                        </mat-card-actions> -->
+                        </div>
+                    </div>
+                </mat-card>
+
+                              <!-- CARD  -->
+                <mat-card class="property_card">
+                    <div class="propertycard_container">
+                        <!-- STATUS INDICATOR  -->
+                        <div class="statusindicator">
+                            <div class="statusdot"></div>
+                            <span class="statuslabel">Active</span>
+                        </div>
+                        <!-- CARD IMAGE  -->
+                        <div class="propertycard_image">
+                            <img mat-card-image
+                                src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+                        </div>
+                        <div class="flex flex-col justify-between gap-4">
+
+                            <div class="cardcontentswrapper">
+                                <!-- CARD TITLE  -->
+                                <mat-card-title class="propertytitle">
+                                    <label for="title">Property name</label>
+                                </mat-card-title>
+                                <!-- CARD SUBTITLE  -->
+                                <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
+                                <!-- UNITS -->
+                                <div class="flex flex-col mb-2">
+                                    <span>Units: 7/10 filled</span>
+                                </div>
+                                <!-- AMOUNT  -->
+                                <div class="propertyamount">
+                                    <label>1,25,000/month</label>
+                                </div>
+                            </div>
+                            <!-- ACTIONS ROW  -->
+                            <!-- <mat-card-actions class="propertycard_footer">
+                            <button mat-button color="primary" class="secondarylightbtn">View Details</button>
+                        </mat-card-actions> -->
+                        </div>
+                    </div>
+                </mat-card>
+
+                              <!-- CARD  -->
+                <mat-card class="property_card">
+                    <div class="propertycard_container">
+                        <!-- STATUS INDICATOR  -->
+                        <div class="statusindicator">
+                            <div class="statusdot"></div>
+                            <span class="statuslabel">Active</span>
+                        </div>
+                        <!-- CARD IMAGE  -->
+                        <div class="propertycard_image">
+                            <img mat-card-image
+                                src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+                        </div>
+                        <div class="flex flex-col justify-between gap-4">
+
+                            <div class="cardcontentswrapper">
+                                <!-- CARD TITLE  -->
+                                <mat-card-title class="propertytitle">
+                                    <label for="title">Property name</label>
+                                </mat-card-title>
+                                <!-- CARD SUBTITLE  -->
+                                <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
+                                <!-- UNITS -->
+                                <div class="flex flex-col mb-2">
+                                    <span>Units: 7/10 filled</span>
+                                </div>
+                                <!-- AMOUNT  -->
+                                <div class="propertyamount">
+                                    <label>1,25,000/month</label>
+                                </div>
+                            </div>
+                            <!-- ACTIONS ROW  -->
+                            <!-- <mat-card-actions class="propertycard_footer">
+                            <button mat-button color="primary" class="secondarylightbtn">View Details</button>
+                        </mat-card-actions> -->
+                        </div>
+                    </div>
+                </mat-card>
 
 
+              
+
+            </div>
         </div>
 
     </mat-tab>
 
     <mat-tab label="Hostels">
-        <p>Hostels content goes here.</p>
+
+        <!-- CONTROLS ROW  -->
+        <div class="flex justify-between items-end gap-3 mt-2 mb-3">
+            <div class="flex justify-start items-end mr-auto">
+                <div class="flex flex-col">
+                    <mat-label>Select location</mat-label>
+                    <mat-form-field appearance="outline">
+                        <mat-select>
+                            <mat-option value="" disabled selected>
+                                Select a city
+                            </mat-option>
+                            <mat-option value="blr">All</mat-option>
+                            <mat-option value="blr">Bangalore</mat-option>
+                            <mat-option value="hyd">Hyderabad</mat-option>
+                            <mat-option value="chn">Chennai</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="flex justify-end items-end gap-3 ml-auto">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Search properties">
+                </mat-form-field>
+                <button mat-flat-button color="primary">
+                    <span class="material-symbols-rounded btnicon">add</span>
+                    <span class="btnlabel">Add Property</span>
+                </button>
+            </div>
+        </div>
+
+          <!-- CARD CONTAINER  -->
+        <div class="page_scroll">
+            <div class="propertycard_wrapper">
+
+                <!-- CARD  -->
+                <mat-card class="property_card">
+                    <div class="propertycard_container">
+                        <!-- STATUS INDICATOR  -->
+                        <div class="statusindicator">
+                            <div class="statusdot"></div>
+                            <span class="statuslabel">Active</span>
+                        </div>
+                        <!-- CARD IMAGE  -->
+                        <div class="propertycard_image">
+                            <img mat-card-image
+                                src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+                        </div>
+                        <div class="flex flex-col justify-between gap-4">
+
+                            <div class="cardcontentswrapper">
+                                <!-- CARD TITLE  -->
+                                <mat-card-title class="propertytitle">
+                                    <label for="title">Property name</label>
+                                </mat-card-title>
+                                <!-- CARD SUBTITLE  -->
+                                <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
+                                <!-- UNITS -->
+                                <div class="flex flex-col mb-2">
+                                    <span>Units: 7/10 filled</span>
+                                </div>
+                                <!-- AMOUNT  -->
+                                <div class="propertyamount">
+                                    <label>1,25,000/month</label>
+                                </div>
+                            </div>
+                            <!-- ACTIONS ROW  -->
+                            <!-- <mat-card-actions class="propertycard_footer">
+                            <button mat-button color="primary" class="secondarylightbtn">View Details</button>
+                        </mat-card-actions> -->
+                        </div>
+                    </div>
+                </mat-card>
+
+                              <!-- CARD  -->
+                <mat-card class="property_card">
+                    <div class="propertycard_container">
+                        <!-- STATUS INDICATOR  -->
+                        <div class="statusindicator">
+                            <div class="statusdot"></div>
+                            <span class="statuslabel">Active</span>
+                        </div>
+                        <!-- CARD IMAGE  -->
+                        <div class="propertycard_image">
+                            <img mat-card-image
+                                src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+                        </div>
+                        <div class="flex flex-col justify-between gap-4">
+
+                            <div class="cardcontentswrapper">
+                                <!-- CARD TITLE  -->
+                                <mat-card-title class="propertytitle">
+                                    <label for="title">Property name</label>
+                                </mat-card-title>
+                                <!-- CARD SUBTITLE  -->
+                                <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
+                                <!-- UNITS -->
+                                <div class="flex flex-col mb-2">
+                                    <span>Units: 7/10 filled</span>
+                                </div>
+                                <!-- AMOUNT  -->
+                                <div class="propertyamount">
+                                    <label>1,25,000/month</label>
+                                </div>
+                            </div>
+                            <!-- ACTIONS ROW  -->
+                            <!-- <mat-card-actions class="propertycard_footer">
+                            <button mat-button color="primary" class="secondarylightbtn">View Details</button>
+                        </mat-card-actions> -->
+                        </div>
+                    </div>
+                </mat-card>
+
+                              <!-- CARD  -->
+                <mat-card class="property_card">
+                    <div class="propertycard_container">
+                        <!-- STATUS INDICATOR  -->
+                        <div class="statusindicator">
+                            <div class="statusdot"></div>
+                            <span class="statuslabel">Active</span>
+                        </div>
+                        <!-- CARD IMAGE  -->
+                        <div class="propertycard_image">
+                            <img mat-card-image
+                                src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+                        </div>
+                        <div class="flex flex-col justify-between gap-4">
+
+                            <div class="cardcontentswrapper">
+                                <!-- CARD TITLE  -->
+                                <mat-card-title class="propertytitle">
+                                    <label for="title">Property name</label>
+                                </mat-card-title>
+                                <!-- CARD SUBTITLE  -->
+                                <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
+                                <!-- UNITS -->
+                                <div class="flex flex-col mb-2">
+                                    <span>Units: 7/10 filled</span>
+                                </div>
+                                <!-- AMOUNT  -->
+                                <div class="propertyamount">
+                                    <label>1,25,000/month</label>
+                                </div>
+                            </div>
+                            <!-- ACTIONS ROW  -->
+                            <!-- <mat-card-actions class="propertycard_footer">
+                            <button mat-button color="primary" class="secondarylightbtn">View Details</button>
+                        </mat-card-actions> -->
+                        </div>
+                    </div>
+                </mat-card>
+
+                              <!-- CARD  -->
+                <mat-card class="property_card">
+                    <div class="propertycard_container">
+                        <!-- STATUS INDICATOR  -->
+                        <div class="statusindicator">
+                            <div class="statusdot"></div>
+                            <span class="statuslabel">Active</span>
+                        </div>
+                        <!-- CARD IMAGE  -->
+                        <div class="propertycard_image">
+                            <img mat-card-image
+                                src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+                        </div>
+                        <div class="flex flex-col justify-between gap-4">
+
+                            <div class="cardcontentswrapper">
+                                <!-- CARD TITLE  -->
+                                <mat-card-title class="propertytitle">
+                                    <label for="title">Property name</label>
+                                </mat-card-title>
+                                <!-- CARD SUBTITLE  -->
+                                <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
+                                <!-- UNITS -->
+                                <div class="flex flex-col mb-2">
+                                    <span>Units: 7/10 filled</span>
+                                </div>
+                                <!-- AMOUNT  -->
+                                <div class="propertyamount">
+                                    <label>1,25,000/month</label>
+                                </div>
+                            </div>
+                            <!-- ACTIONS ROW  -->
+                            <!-- <mat-card-actions class="propertycard_footer">
+                            <button mat-button color="primary" class="secondarylightbtn">View Details</button>
+                        </mat-card-actions> -->
+                        </div>
+                    </div>
+                </mat-card>
+
+                              <!-- CARD  -->
+                <mat-card class="property_card">
+                    <div class="propertycard_container">
+                        <!-- STATUS INDICATOR  -->
+                        <div class="statusindicator">
+                            <div class="statusdot"></div>
+                            <span class="statuslabel">Active</span>
+                        </div>
+                        <!-- CARD IMAGE  -->
+                        <div class="propertycard_image">
+                            <img mat-card-image
+                                src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+                        </div>
+                        <div class="flex flex-col justify-between gap-4">
+
+                            <div class="cardcontentswrapper">
+                                <!-- CARD TITLE  -->
+                                <mat-card-title class="propertytitle">
+                                    <label for="title">Property name</label>
+                                </mat-card-title>
+                                <!-- CARD SUBTITLE  -->
+                                <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
+                                <!-- UNITS -->
+                                <div class="flex flex-col mb-2">
+                                    <span>Units: 7/10 filled</span>
+                                </div>
+                                <!-- AMOUNT  -->
+                                <div class="propertyamount">
+                                    <label>1,25,000/month</label>
+                                </div>
+                            </div>
+                            <!-- ACTIONS ROW  -->
+                            <!-- <mat-card-actions class="propertycard_footer">
+                            <button mat-button color="primary" class="secondarylightbtn">View Details</button>
+                        </mat-card-actions> -->
+                        </div>
+                    </div>
+                </mat-card>
+
+                              <!-- CARD  -->
+                <mat-card class="property_card">
+                    <div class="propertycard_container">
+                        <!-- STATUS INDICATOR  -->
+                        <div class="statusindicator">
+                            <div class="statusdot"></div>
+                            <span class="statuslabel">Active</span>
+                        </div>
+                        <!-- CARD IMAGE  -->
+                        <div class="propertycard_image">
+                            <img mat-card-image
+                                src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+                        </div>
+                        <div class="flex flex-col justify-between gap-4">
+
+                            <div class="cardcontentswrapper">
+                                <!-- CARD TITLE  -->
+                                <mat-card-title class="propertytitle">
+                                    <label for="title">Property name</label>
+                                </mat-card-title>
+                                <!-- CARD SUBTITLE  -->
+                                <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
+                                <!-- UNITS -->
+                                <div class="flex flex-col mb-2">
+                                    <span>Units: 7/10 filled</span>
+                                </div>
+                                <!-- AMOUNT  -->
+                                <div class="propertyamount">
+                                    <label>1,25,000/month</label>
+                                </div>
+                            </div>
+                            <!-- ACTIONS ROW  -->
+                            <!-- <mat-card-actions class="propertycard_footer">
+                            <button mat-button color="primary" class="secondarylightbtn">View Details</button>
+                        </mat-card-actions> -->
+                        </div>
+                    </div>
+                </mat-card>
+
+                              <!-- CARD  -->
+                <mat-card class="property_card">
+                    <div class="propertycard_container">
+                        <!-- STATUS INDICATOR  -->
+                        <div class="statusindicator">
+                            <div class="statusdot"></div>
+                            <span class="statuslabel">Active</span>
+                        </div>
+                        <!-- CARD IMAGE  -->
+                        <div class="propertycard_image">
+                            <img mat-card-image
+                                src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+                        </div>
+                        <div class="flex flex-col justify-between gap-4">
+
+                            <div class="cardcontentswrapper">
+                                <!-- CARD TITLE  -->
+                                <mat-card-title class="propertytitle">
+                                    <label for="title">Property name</label>
+                                </mat-card-title>
+                                <!-- CARD SUBTITLE  -->
+                                <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
+                                <!-- UNITS -->
+                                <div class="flex flex-col mb-2">
+                                    <span>Units: 7/10 filled</span>
+                                </div>
+                                <!-- AMOUNT  -->
+                                <div class="propertyamount">
+                                    <label>1,25,000/month</label>
+                                </div>
+                            </div>
+                            <!-- ACTIONS ROW  -->
+                            <!-- <mat-card-actions class="propertycard_footer">
+                            <button mat-button color="primary" class="secondarylightbtn">View Details</button>
+                        </mat-card-actions> -->
+                        </div>
+                    </div>
+                </mat-card>
+
+                              <!-- CARD  -->
+                <mat-card class="property_card">
+                    <div class="propertycard_container">
+                        <!-- STATUS INDICATOR  -->
+                        <div class="statusindicator">
+                            <div class="statusdot"></div>
+                            <span class="statuslabel">Active</span>
+                        </div>
+                        <!-- CARD IMAGE  -->
+                        <div class="propertycard_image">
+                            <img mat-card-image
+                                src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+                        </div>
+                        <div class="flex flex-col justify-between gap-4">
+
+                            <div class="cardcontentswrapper">
+                                <!-- CARD TITLE  -->
+                                <mat-card-title class="propertytitle">
+                                    <label for="title">Property name</label>
+                                </mat-card-title>
+                                <!-- CARD SUBTITLE  -->
+                                <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
+                                <!-- UNITS -->
+                                <div class="flex flex-col mb-2">
+                                    <span>Units: 7/10 filled</span>
+                                </div>
+                                <!-- AMOUNT  -->
+                                <div class="propertyamount">
+                                    <label>1,25,000/month</label>
+                                </div>
+                            </div>
+                            <!-- ACTIONS ROW  -->
+                            <!-- <mat-card-actions class="propertycard_footer">
+                            <button mat-button color="primary" class="secondarylightbtn">View Details</button>
+                        </mat-card-actions> -->
+                        </div>
+                    </div>
+                </mat-card>
+
+                              <!-- CARD  -->
+                <mat-card class="property_card">
+                    <div class="propertycard_container">
+                        <!-- STATUS INDICATOR  -->
+                        <div class="statusindicator">
+                            <div class="statusdot"></div>
+                            <span class="statuslabel">Active</span>
+                        </div>
+                        <!-- CARD IMAGE  -->
+                        <div class="propertycard_image">
+                            <img mat-card-image
+                                src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+                        </div>
+                        <div class="flex flex-col justify-between gap-4">
+
+                            <div class="cardcontentswrapper">
+                                <!-- CARD TITLE  -->
+                                <mat-card-title class="propertytitle">
+                                    <label for="title">Property name</label>
+                                </mat-card-title>
+                                <!-- CARD SUBTITLE  -->
+                                <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
+                                <!-- UNITS -->
+                                <div class="flex flex-col mb-2">
+                                    <span>Units: 7/10 filled</span>
+                                </div>
+                                <!-- AMOUNT  -->
+                                <div class="propertyamount">
+                                    <label>1,25,000/month</label>
+                                </div>
+                            </div>
+                            <!-- ACTIONS ROW  -->
+                            <!-- <mat-card-actions class="propertycard_footer">
+                            <button mat-button color="primary" class="secondarylightbtn">View Details</button>
+                        </mat-card-actions> -->
+                        </div>
+                    </div>
+                </mat-card>
+
+                              <!-- CARD  -->
+                <mat-card class="property_card">
+                    <div class="propertycard_container">
+                        <!-- STATUS INDICATOR  -->
+                        <div class="statusindicator">
+                            <div class="statusdot"></div>
+                            <span class="statuslabel">Active</span>
+                        </div>
+                        <!-- CARD IMAGE  -->
+                        <div class="propertycard_image">
+                            <img mat-card-image
+                                src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+                        </div>
+                        <div class="flex flex-col justify-between gap-4">
+
+                            <div class="cardcontentswrapper">
+                                <!-- CARD TITLE  -->
+                                <mat-card-title class="propertytitle">
+                                    <label for="title">Property name</label>
+                                </mat-card-title>
+                                <!-- CARD SUBTITLE  -->
+                                <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
+                                <!-- UNITS -->
+                                <div class="flex flex-col mb-2">
+                                    <span>Units: 7/10 filled</span>
+                                </div>
+                                <!-- AMOUNT  -->
+                                <div class="propertyamount">
+                                    <label>1,25,000/month</label>
+                                </div>
+                            </div>
+                            <!-- ACTIONS ROW  -->
+                            <!-- <mat-card-actions class="propertycard_footer">
+                            <button mat-button color="primary" class="secondarylightbtn">View Details</button>
+                        </mat-card-actions> -->
+                        </div>
+                    </div>
+                </mat-card>
+
+                              <!-- CARD  -->
+                <mat-card class="property_card">
+                    <div class="propertycard_container">
+                        <!-- STATUS INDICATOR  -->
+                        <div class="statusindicator">
+                            <div class="statusdot"></div>
+                            <span class="statuslabel">Active</span>
+                        </div>
+                        <!-- CARD IMAGE  -->
+                        <div class="propertycard_image">
+                            <img mat-card-image
+                                src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+                        </div>
+                        <div class="flex flex-col justify-between gap-4">
+
+                            <div class="cardcontentswrapper">
+                                <!-- CARD TITLE  -->
+                                <mat-card-title class="propertytitle">
+                                    <label for="title">Property name</label>
+                                </mat-card-title>
+                                <!-- CARD SUBTITLE  -->
+                                <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
+                                <!-- UNITS -->
+                                <div class="flex flex-col mb-2">
+                                    <span>Units: 7/10 filled</span>
+                                </div>
+                                <!-- AMOUNT  -->
+                                <div class="propertyamount">
+                                    <label>1,25,000/month</label>
+                                </div>
+                            </div>
+                            <!-- ACTIONS ROW  -->
+                            <!-- <mat-card-actions class="propertycard_footer">
+                            <button mat-button color="primary" class="secondarylightbtn">View Details</button>
+                        </mat-card-actions> -->
+                        </div>
+                    </div>
+                </mat-card>
+
+                              <!-- CARD  -->
+                <mat-card class="property_card">
+                    <div class="propertycard_container">
+                        <!-- STATUS INDICATOR  -->
+                        <div class="statusindicator">
+                            <div class="statusdot"></div>
+                            <span class="statuslabel">Active</span>
+                        </div>
+                        <!-- CARD IMAGE  -->
+                        <div class="propertycard_image">
+                            <img mat-card-image
+                                src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+                        </div>
+                        <div class="flex flex-col justify-between gap-4">
+
+                            <div class="cardcontentswrapper">
+                                <!-- CARD TITLE  -->
+                                <mat-card-title class="propertytitle">
+                                    <label for="title">Property name</label>
+                                </mat-card-title>
+                                <!-- CARD SUBTITLE  -->
+                                <mat-card-subtitle class="pb-2">Address</mat-card-subtitle>
+                                <!-- UNITS -->
+                                <div class="flex flex-col mb-2">
+                                    <span>Units: 7/10 filled</span>
+                                </div>
+                                <!-- AMOUNT  -->
+                                <div class="propertyamount">
+                                    <label>1,25,000/month</label>
+                                </div>
+                            </div>
+                            <!-- ACTIONS ROW  -->
+                            <!-- <mat-card-actions class="propertycard_footer">
+                            <button mat-button color="primary" class="secondarylightbtn">View Details</button>
+                        </mat-card-actions> -->
+                        </div>
+                    </div>
+                </mat-card>
+
+            </div>
+        </div>
+
+
     </mat-tab>
 
     <mat-tab label="Shops">
