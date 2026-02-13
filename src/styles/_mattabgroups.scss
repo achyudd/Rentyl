@@ -1,0 +1,56 @@
+
+// MAT TAB 
+.mat-mdc-tab-labels {
+    border-bottom: 1px solid var(--border-medium-color) !important;
+}
+
+.mat-mdc-tab.mdc-tab--active .mdc-tab__text-label {
+    color: var(--accent-color) !important;
+}
+
+.mat-mdc-tab .mdc-tab-indicator__content--underline {
+    border-color: var(--accent-color) !important;
+}
+
+.mat-mdc-tab .mdc-tab__text-label {
+    color: var(--s-text-color) !important;
+}
+
+.mat-mdc-tab.mdc-tab--active .mdc-tab__ripple::before,
+.mat-mdc-tab.mdc-tab--active .mat-ripple-element {
+    background-color: var(--accent-light-color) !important;
+}
+
+
+.mat-mdc-tab-header-pagination-chevron{
+    border-color: var(--text-color) !important;
+}
+
+/* tab group must be a flex column */
+mat-tab-group {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* wrapper that holds all tab bodies */
+.mat-mdc-tab-body-wrapper {
+    flex: 1;
+    overflow: hidden !important;
+}
+
+/* active tab body */
+.mat-mdc-tab-body.mat-mdc-tab-body-active {
+    height: 100%;
+}
+
+/* THIS is the critical one */
+.mat-mdc-tab-body-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* stop body scroll */
+}
+
+// MAT TAB END 

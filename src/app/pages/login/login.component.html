@@ -1,0 +1,33 @@
+<section class="login_page">
+    <div class="left_login_section">
+        <h1>Welcome Back!</h1>
+        <p>Please login to your account to continue.</p>
+    </div>
+    <div class="login_container">
+        <div class="login_form">
+            <h2>Rentyl</h2>
+            <form [formGroup]="loginForm" (ngSubmit)="login()">
+
+                <mat-label>Username</mat-label>
+                <mat-form-field appearance="outline" class="mb-3">
+                    <input matInput formControlName="username" />
+                </mat-form-field>
+
+                <mat-label>Password</mat-label>
+                <mat-form-field appearance="outline" >
+                    <input matInput type="password" formControlName="password" />
+                </mat-form-field>
+
+                @if (errorMessage) {
+                <p class="error my-2 text-center">{{ errorMessage }}</p>
+                }
+
+                <button mat-flat-button color="primary" type="submit" class="my-4">
+                    Login
+                </button>
+
+
+            </form>
+        </div>
+    </div>
+</section>

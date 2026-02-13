@@ -9,70 +9,39 @@ import { MaintenanceComponent } from './pages/maintenance/maintenance.component'
 import { ReportsComponent } from './pages/reports/reports.component';
 import { DocumentsComponent } from './pages/documents/documents.component';
 import { SettingsComponent } from './pages/settings/settings.component';
+import { LoginComponent } from './pages/login/login.component';
+import { authGuard } from './core/guards/auth.guard';
+import { MainLayoutComponent } from './components/layout/main-layout/main-layout.component';
+
 
 export const routes: Routes = [
-    { 
-        path: '', 
-        redirectTo: 'dashboard', 
-        pathMatch: 'full' 
-    },
 
-    { 
-        path: 'dashboard', 
-        component: DashboardComponent,
-        data: { title: 'Dashboard' }
-    },
-    
-    { 
-        path: 'properties', 
-        component: PropertiesComponent,
-        data: { title: 'My Properties' }
-    },
-    
-    { 
-        path: 'tenants', 
-        component: TenantsComponent,
-        data: { title: 'Tenants' }
-    },
-    
-    { 
-        path: 'rents-and-payments', 
-        component: RentsAndPaymentsComponent,
-        data: { title: 'Rents and Payments' }
-    },
-    
-    { 
-        path: 'expenses', 
-        component: ExpensesComponent,
-        data: { title: 'Expenses' }
-    },
-    
-    { 
-        path: 'maintenance', 
-        component: MaintenanceComponent,
-        data: { title: 'Maintenance' }
-    },
-    
-    { 
-        path: 'reports', 
-        component: ReportsComponent,
-        data: { title: 'Reports' }
-    },
-    
-    { 
-        path: 'documents', 
-        component: DocumentsComponent,
-        data: { title: 'Documents' }
-    },
-    
-    { 
-        path: 'settings', 
-        component: SettingsComponent,
-        data: { title: 'Settings' }
-    },
+  {
+    path: 'login',
+    component: LoginComponent
+  },
 
-    { 
-        path: '**', 
-        redirectTo: 'dashboard' 
-    }
+  {
+    path: '',
+    component: MainLayoutComponent,
+    canActivate: [authGuard],
+    children: [
+
+      { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+
+      { path: 'dashboard', component: DashboardComponent },
+      { path: 'properties', component: PropertiesComponent },
+      { path: 'tenants', component: TenantsComponent },
+      { path: 'rents-and-payments', component: RentsAndPaymentsComponent },
+      { path: 'expenses', component: ExpensesComponent },
+      { path: 'maintenance', component: MaintenanceComponent },
+      { path: 'reports', component: ReportsComponent },
+      { path: 'documents', component: DocumentsComponent },
+      { path: 'settings', component: SettingsComponent }
+
+    ]
+  },
+
+  { path: '**', redirectTo: 'login' }
+
 ];

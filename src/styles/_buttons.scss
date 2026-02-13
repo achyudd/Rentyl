@@ -1,0 +1,108 @@
+
+.mdc-button {
+    background-color: var(--accent-color) !important;
+    color: var(--text-color) !important;
+    padding-inline: 6px !important;
+    min-width: fit-content !important;
+    border-radius: 6px !important;
+    cursor: pointer;
+}
+
+.mdc-button__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--btntext-color) !important;
+    letter-spacing: 0.5px !important;
+}
+
+.mdc-button__label .btnicon {
+    color: var(--btntext-color) !important;
+    font-size: 20px;
+}
+
+.btnicon {
+    padding-inline: 2px;
+}
+
+.btnlabel {
+    padding-inline: 2px !important;
+}
+
+.accentlightbtn {
+    background-color: var(--accent-light-color) !important;
+    color: var(--accent-color) !important;
+}
+
+.accentlightbtn .mdc-button__label {
+    color: var(--accent-color) !important;
+}
+
+.secondarylightbtn {
+    background-color: var(--hover2-color) !important;
+    color: var(--text-color) !important;
+}
+
+.secondarylightbtn .mdc-button__label {
+    color: var(--text-color) !important;
+}
+
+.accent_borderedbtn {
+    border: 2px solid var(--accent-color) !important;
+    background-color: transparent !important;
+    color: var(--accent-color) !important;
+}
+
+.accent_borderedbtn .mdc-button__label {
+    color: var(--accent-color) !important;
+}
+
+.normal_borderedbtn {
+    border: 2px solid var(--border-xdark-color) !important;
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+}
+
+.normal_borderedbtn .mdc-button__label {
+    color: var(--text-color) !important;
+}
+
+
+.mdc-button.backtobtn {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+    padding-inline: 6px !important;
+    min-width: fit-content !important;
+    border-radius: 6px !important;
+}
+
+.mdc-button.backtobtn .mdc-button__label .btnicon {
+    color: var(--text-color) !important;
+    font-size: 20px;
+}
+
+/* ===== Disabled Button Style ===== */
+
+.mdc-button:disabled,
+.mdc-button.mdc-button--disabled {
+
+  background-color: var(--disbled-btn-bg-color) !important;   
+  color: var(--s-text-color) !important;            
+
+  cursor: not-allowed !important;
+  box-shadow: none !important;
+
+  opacity: 1 !important;                
+}
+
+/* Label inside */
+.mdc-button:disabled .mdc-button__label,
+.mdc-button.mdc-button--disabled .mdc-button__label {
+  color: var(--s-text-color) !important;        
+}
+
+/* Icon inside */
+.mdc-button:disabled .btnicon,
+.mdc-button.mdc-button--disabled .btnicon {
+  color: var(--s-text-color) !important;        
+}

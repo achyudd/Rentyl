@@ -12,3 +12,16 @@ import { MATERIAL_IMPORTS } from '../../shared/material';
 export class PropertiesComponent {
 
 }
+
+
+
+@Component({
+    selector: 'app-property-view',
+    standalone: true,
+    imports: [...MATERIAL_IMPORTS],
+    templateUrl: './property-view.html',
+    styleUrls: ['./properties.component.scss']
+})
+export class PropertyViewComponent {
+
+}
