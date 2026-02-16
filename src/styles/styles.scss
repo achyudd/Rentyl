@@ -439,6 +439,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-block: 0px 12px;
+    overflow: hidden;
 }
 
 .propertyfull_details {
@@ -450,8 +451,8 @@ body {
     gap: 12px;
     flex: 1;
     min-height: 0;
-
-}
+    overflow: hidden;
+}   
 
 .mat-mdc-card.property_view_card {
     display: flex;
@@ -466,6 +467,7 @@ body {
     max-width: 300px;
     border-radius: 0px;
     box-shadow: none !important;
+    overflow: auto;
 
 }
 
@@ -491,6 +493,12 @@ body {
     text-wrap: balance;
 }
 
+
+.propertyview_tabs{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
 
 // MEDIA QUERIES 
 
