@@ -1,14 +1,14 @@
-
-.mdc-button {
+/* MAT FLAT BUTTON */
+.mat-mdc-unelevated-button {
     background-color: var(--accent-color) !important;
-    color: var(--text-color) !important;
+    color: var(--btntext-color) !important;
     padding-inline: 6px !important;
     min-width: fit-content !important;
     border-radius: 6px !important;
     cursor: pointer;
 }
 
-.mdc-button__label {
+.mat-mdc-unelevated-button .mdc-button__label {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,7 @@
     letter-spacing: 0.5px !important;
 }
 
-.mdc-button__label .btnicon {
+.mat-mdc-unelevated-button .btnicon {
     color: var(--btntext-color) !important;
     font-size: 20px;
 }
@@ -29,41 +29,68 @@
     padding-inline: 2px !important;
 }
 
-.accentlightbtn {
+/* Accent Light Flat */
+.mat-mdc-unelevated-button.accentlightbtn {
     background-color: var(--accent-light-color) !important;
     color: var(--accent-color) !important;
 }
 
-.accentlightbtn .mdc-button__label {
+.mat-mdc-unelevated-button.accentlightbtn .mdc-button__label {
     color: var(--accent-color) !important;
 }
 
-.secondarylightbtn {
+.mat-mdc-unelevated-button.accentlightbtn .btnicon {
+    color: var(--accent-color) !important;
+    font-size: 20px;
+}
+
+/* Secondary Light Flat */
+.mat-mdc-unelevated-button.secondarylightbtn {
     background-color: var(--hover2-color) !important;
     color: var(--text-color) !important;
 }
 
-.secondarylightbtn .mdc-button__label {
+.mat-mdc-unelevated-button.secondarylightbtn .mdc-button__label {
     color: var(--text-color) !important;
 }
 
-.accent_borderedbtn {
+.mat-mdc-unelevated-button.secondarylightbtn .btnicon {
+    color: var(--text-color) !important;
+    font-size: 20px;
+}
+
+/* MAT STROKED BUTTON */
+.mat-mdc-outlined-button {
+    padding-inline: 6px !important;
+    min-width: fit-content !important;
+    cursor: pointer;
+
     border: 2px solid var(--accent-color) !important;
     background-color: transparent !important;
     color: var(--accent-color) !important;
+    border-radius: 6px !important;
 }
 
-.accent_borderedbtn .mdc-button__label {
+.mat-mdc-outlined-button .mdc-button__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.5px !important;
     color: var(--accent-color) !important;
 }
 
-.normal_borderedbtn {
+.mat-mdc-unelevated-button .btnicon {
+    color: var(--btntext-color) !important;
+    font-size: 20px;
+}
+
+.mat-mdc-outlined-button.normal_borderedbtn {
     border: 2px solid var(--border-xdark-color) !important;
     background-color: transparent !important;
     color: var(--text-color) !important;
 }
 
-.normal_borderedbtn .mdc-button__label {
+.mat-mdc-outlined-button.normal_borderedbtn .mdc-button__label {
     color: var(--text-color) !important;
 }
 
@@ -86,23 +113,23 @@
 .mdc-button:disabled,
 .mdc-button.mdc-button--disabled {
 
-  background-color: var(--disbled-btn-bg-color) !important;   
-  color: var(--s-text-color) !important;            
+    background-color: var(--disbled-btn-bg-color) !important;
+    color: var(--s-text-color) !important;
 
-  cursor: not-allowed !important;
-  box-shadow: none !important;
+    cursor: not-allowed !important;
+    box-shadow: none !important;
 
-  opacity: 1 !important;                
+    opacity: 1 !important;
 }
 
 /* Label inside */
 .mdc-button:disabled .mdc-button__label,
 .mdc-button.mdc-button--disabled .mdc-button__label {
-  color: var(--s-text-color) !important;        
+    color: var(--s-text-color) !important;
 }
 
 /* Icon inside */
 .mdc-button:disabled .btnicon,
 .mdc-button.mdc-button--disabled .btnicon {
-  color: var(--s-text-color) !important;        
+    color: var(--s-text-color) !important;
 }
