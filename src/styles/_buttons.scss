@@ -29,6 +29,26 @@
     padding-inline: 2px !important;
 }
 
+.mat-mdc-icon-button {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.mat-mdc-icon-button .mat-icon {
+    color: var(--text-color) !important;
+    font-size: 20px;
+}
+
+.mat-mdc-icon-button:hover {
+    background-color: var(--hover-color) !important;
+    color: var(--text-color) !important;
+}
+
 /* Accent Light Flat */
 .mat-mdc-unelevated-button.accentlightbtn {
     background-color: var(--accent-light-color) !important;

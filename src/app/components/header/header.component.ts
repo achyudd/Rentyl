@@ -1,13 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { filter, map } from 'rxjs/operators';
+import { MATERIAL_IMPORTS } from '../../shared/material';
+import { RouterLink } from "@angular/router";
+import { RouterLinkActive } from "@angular/router";
 
 @Component({
-    selector: 'app-header',
-      standalone: true,
-    imports: [],
-    templateUrl: './header.component.html',
-    styleUrl: './header.component.scss'
+  selector: 'app-header',
+  standalone: true,
+  imports: [ 
+    MATERIAL_IMPORTS,
+    RouterLink,
+    RouterLinkActive
+  ],
+  templateUrl: './header.component.html',
+  styleUrl: './header.component.scss'
 })
 
 export class HeaderComponent {

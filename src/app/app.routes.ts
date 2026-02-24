@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { PropertiesComponent } from './pages/properties/properties.component';
+import { PropertiesComponent, PropertyViewComponent } from './pages/properties/properties.component';
 import { TenantsComponent } from './pages/tenants/tenants.component';
 import { RentsAndPaymentsComponent } from './pages/rents-and-payments/rents-and-payments.component';
 import { ExpensesComponent } from './pages/expenses/expenses.component';
@@ -37,7 +37,9 @@ export const routes: Routes = [
       { path: 'maintenance', component: MaintenanceComponent },
       { path: 'reports', component: ReportsComponent },
       { path: 'documents', component: DocumentsComponent },
-      { path: 'settings', component: SettingsComponent }
+      { path: 'settings', component: SettingsComponent },
+
+      { path: 'property-view', component: PropertyViewComponent }
 
     ]
   },

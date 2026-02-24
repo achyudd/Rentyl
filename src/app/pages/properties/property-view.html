@@ -1,1 +1,151 @@
-hii
+<section class="property_view_section">
+    
+    <div class="backto_panel_header">
+        <button mat-icon-button class="backtobtn" routerLink="/properties">
+            <mat-icon class="btnicon">
+                arrow_back
+            </mat-icon>
+        </button>
+        <div class="property_header_name">
+            <h2>Empora Views</h2>
+            <p>Malapramba, Kozhikode</p>
+        </div>
+        <div></div>
+    </div>
+
+    <div class="propertyfull_details">
+        <mat-card class="property_view_card">
+            <div class="statusindicator">
+                <div class="statusdot"></div>
+                <span class="statuslabel">Active</span>
+            </div>
+            <!-- Image -->
+            <div class="property_image_wrapper">
+                <img src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg">
+            </div>
+
+            <!-- Content -->
+            <div class="property_info_section">
+
+                <div class="address_wrapper">
+                    <mat-icon class="fsize">
+                        my_location
+                    </mat-icon>
+                    <p class="property_address">
+                        123 Main Street, Kozhikode, Malabar, Kerala, 673001
+                    </p>
+                </div>
+
+                <div class="property_stats">
+                    <div class="stat_box">
+                        <span class="stat_value">7 / 10</span>
+                        <span class="stat_label">Units Filled</span>
+                    </div>
+                    <div class="stat_box">
+                        <span class="stat_value amnt">₹1,75,000</span>
+                        <span class="stat_label">Monthly Revenue</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </mat-card>
+
+        <div class="propertyview_tabs">
+            <mat-tab-group>
+
+                <mat-tab label="Floor 1">
+
+                    <div class="floor_rooms_container">
+
+                        <mat-card class="room_card">
+                            <!-- Image Section -->
+                            <div class="image_wrapper">
+                                <img [src]="roomImages[currentImageIndex]" class="room_image" />
+
+                                <button mat-icon-button class="img_nav_btn left" (click)="prevImage()">
+                                    <mat-icon>chevron_left</mat-icon>
+                                </button>
+
+                                <button mat-icon-button class="img_nav_btn right" (click)="nextImage()">
+                                    <mat-icon>chevron_right</mat-icon>
+                                </button>
+                            </div>
+
+                            <!-- Content -->
+                            <div class="room_content">
+
+                                <div class="room_header">
+                                    <div class="room_title_section">
+                                        <h3>
+                                            Room 101 - Deluxe Premium Presidential Suite With Extended Balcony View
+                                        </h3>
+                                        <span class="room_meta">
+                                            2BHK • 1200 sq.ft • Fully Furnished
+                                        </span>
+                                    </div>
+
+                                    <span class="propertystatus occupied">
+                                        Occupied
+                                    </span>
+                                    <!-- <span class="propertystatus available">
+                                        Available
+                                    </span> -->
+                                </div>
+
+                                <div class="room_details">
+
+                                    <div class="detail-box">
+                                        <span class="room_details_label">Rent</span>
+                                        <span class="room_details_value room_rent_amnt">₹25,000 / month</span>
+                                    </div>
+
+                                    <div class="detail-box">
+                                        <span class="room_details_label">Payment Status</span>
+                                        <span class="room_details_value payment_status paid">Paid</span>
+                                        <!-- <span class="room_details_value payment_status due">Due</span>
+                                        <span class="room_details_value payment_status overdue">Overdue</span> -->
+                                    </div>
+
+                                    <div class="detail-box">
+                                        <span class="room_details_label">Deposit</span>
+                                        <span class="room_details_value">₹75,000</span>
+                                    </div>
+
+                                    <div class="detail-box">
+                                        <span class="room_details_label">Tenant</span>
+                                        <span class="room_details_value safe_text">
+                                            <u class="cursor-pointer">Alvin Sabu</u>
+                                        </span>
+                                    </div>
+
+                                    <div class="detail-box">
+                                        <span class="room_details_label">Lease End</span>
+                                        <span class="room_details_value">Dec 2026</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="room_actions">
+                                    <button mat-flat-button class="accentlightbtn flex-grow" (click)="manageProperty()">
+                                        <span class="btnlabel">Manage</span>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </mat-card>
+
+                    </div>
+
+                </mat-tab>
+
+                <mat-tab label="Floor 2">
+
+                </mat-tab>
+
+            </mat-tab-group>
+        </div>
+    </div>
+
+</section>

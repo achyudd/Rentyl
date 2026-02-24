@@ -6,7 +6,7 @@
             </a>
         </h2>
         <button class="menubtn" (click)="railMenu()">
-            <span class="material-symbols-rounded icon">menu</span>
+            <mat-icon class="icon">menu</mat-icon>
         </button>
     </div>
 
@@ -14,66 +14,59 @@
         <div class="btns-container">
             <button class="sidebar-btn sidebar-tooltip" routerLink="/dashboard" routerLinkActive="active"
                 [routerLinkActiveOptions]="{exact: true}">
-                <span class="material-symbols-rounded icon">dashboard</span>
+                <mat-icon class="icon">dashboard</mat-icon>
                 <label class="hiddenlabel">Dashboard</label>
                 <span class="tooltip-text" *ngIf="isCollapsed">
                     Dashboard
                 </span>
             </button>
             <button class="sidebar-btn sidebar-tooltip" routerLink="/properties" routerLinkActive="active">
-                <span class="material-symbols-rounded icon">home_and_garden</span>
+                <mat-icon class="icon">home_and_garden</mat-icon>
                 <label class="hiddenlabel">Properties</label>
                 <span class="tooltip-text" *ngIf="isCollapsed">
                     My Properties
                 </span>
             </button>
             <button class="sidebar-btn sidebar-tooltip" routerLink="/tenants" routerLinkActive="active">
-                <span class="material-symbols-rounded icon">contact_page</span>
+                <mat-icon class="icon">contact_page</mat-icon>
                 <label class="hiddenlabel">Tenants</label>
                 <span class="tooltip-text" *ngIf="isCollapsed">
                     Tenants
                 </span>
             </button>
             <button class="sidebar-btn sidebar-tooltip" routerLink="/rents-and-payments" routerLinkActive="active">
-                <span class="material-symbols-rounded icon">receipt_long</span>
+                <mat-icon class="icon">receipt_long</mat-icon>
                 <label class="hiddenlabel">Rent & Payments</label>
                 <span class="tooltip-text" *ngIf="isCollapsed">
                     Rent & Payments
                 </span>
             </button>
             <button class="sidebar-btn sidebar-tooltip" routerLink="/expenses" routerLinkActive="active">
-                <span class="material-symbols-rounded icon">payments</span>
+                <mat-icon class="icon">payments</mat-icon>
                 <label class="hiddenlabel">Expenses</label>
                 <span class="tooltip-text" *ngIf="isCollapsed">
                     Expenses
                 </span>
             </button>
             <button class="sidebar-btn sidebar-tooltip" routerLink="/maintenance" routerLinkActive="active">
-                <span class="material-symbols-rounded icon">construction</span>
+                <mat-icon class="icon">construction</mat-icon>
                 <label class="hiddenlabel">Maintenance</label>
                 <span class="tooltip-text" *ngIf="isCollapsed">
                     Maintenance
                 </span>
             </button>
             <button class="sidebar-btn sidebar-tooltip" routerLink="/reports" routerLinkActive="active">
-                <span class="material-symbols-rounded icon">note_stack</span>
+                <mat-icon class="icon">note_stack</mat-icon>
                 <label class="hiddenlabel">Reports</label>
                 <span class="tooltip-text" *ngIf="isCollapsed">
                     Reports
                 </span>
             </button>
             <button class="sidebar-btn sidebar-tooltip" routerLink="/documents" routerLinkActive="active">
-                <span class="material-symbols-rounded icon">article</span>
+                <mat-icon class="icon">article</mat-icon>
                 <label class="hiddenlabel">Documents</label>
                 <span class="tooltip-text" *ngIf="isCollapsed">
                     Documents
-                </span>
-            </button>
-            <button class="sidebar-btn sidebar-tooltip" routerLink="/settings" routerLinkActive="active">
-                <span class="material-symbols-rounded icon">settings_account_box</span>
-                <label class="hiddenlabel">Settings</label>
-                <span class="tooltip-text" *ngIf="isCollapsed">
-                    Settings
                 </span>
             </button>
         </div>
@@ -83,11 +76,11 @@
 
             <button (click)="onToggleClick()" aria-label="Toggle Theme" class="themebtn">
                 <ng-container *ngIf="currentTheme === 'light'">
-                    <span class="material-symbols-rounded icon">dark_mode</span>
+                    <mat-icon class="icon">dark_mode</mat-icon>
                 </ng-container>
 
                 <ng-container *ngIf="currentTheme === 'dark'">
-                    <span class="material-symbols-rounded icon">light_mode</span>
+                    <mat-icon class="icon">light_mode</mat-icon>
                 </ng-container>
             </button>
         </div>
