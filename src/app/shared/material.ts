@@ -7,6 +7,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 // add more as needed
 
@@ -19,6 +21,7 @@ export const MATERIAL_IMPORTS = [
   MatCardModule,
   MatTabsModule,
   MatSelectModule,
-  MatDialogModule
-  
+  MatDialogModule,
+  MatDatepickerModule,
+  MatNativeDateModule
 ];

@@ -57,7 +57,7 @@ export class PropertyViewComponent {
 
     manageProperty() {
         const dialogrRef = this.dialog.open(ManagePropertyDialogComponent, {
-            width: '400px',
+            width: '750px',
 
         });
     }

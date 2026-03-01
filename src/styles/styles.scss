@@ -4,6 +4,8 @@
 @use './colors';
 @use './matformfields';
 @use './mattabgroups';
+@use './matdialog';
+@use './datepicker';
 @use './buttons';
 
 // Plus imports for other components in your app.
@@ -349,7 +351,7 @@ body {
     border: 1px solid var(--border-medium-color) !important;
     padding: 8px;
     border-radius: 16px;
-    margin-bottom: 6px; 
+    margin-bottom: 6px;
     cursor: pointer;
 
 }
@@ -733,7 +735,7 @@ body {
     white-space: nowrap;
 }
 
-.propertystatus.available {
+.propertystatus.available, .propertystatus.vacant {
     background: var(--active-light-color);
     color: var(--active-color) !important;
 }
@@ -741,6 +743,16 @@ body {
 .propertystatus.occupied {
     background: var(--notactive-light-color);
     color: var(--notactive-color) !important;
+}
+
+.propertystatus.maintenance {
+    background: var(--accent-light-color);
+    color: var(--accent-color) !important;
+}
+
+.propertystatus.maintenance {
+    background: var(--warninglight-color);
+    color: var(--warning-color) !important;
 }
 
 
@@ -752,7 +764,7 @@ body {
     margin-top: auto;
 }
 
-.no_content{
+.no_content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -762,6 +774,44 @@ body {
     color: gray;
     font-size: 14px;
     font-weight: 400;
+}
+
+.formgroup {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--purebg-color);
+    padding: 16px;
+    border-radius: 24px;
+    margin-bottom: 8px;
+    border: 1px solid var(--border-medium-color) !important;
+}
+
+.formhead {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.formfield {
+    display: flex;
+    flex-direction: column;
+}
+
+.formhead_count {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formhead_count span {
+    color: var(--btntext-color);
+    font-size: 14px;
+    font-weight: 600;
 }
 
 // MEDIA QUERIES 

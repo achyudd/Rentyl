@@ -1,14 +1,130 @@
 <div mat-dialog-title>
-    Manage Property
+    <h2>Manage Room</h2>
+    <button mat-icon-button mat-dialog-close class="dialogclosebtn">
+        <mat-icon>close</mat-icon>
+    </button>
 </div>
 
 <div mat-dialog-content>
 
+    <div class="formgroup">
+        <div class="formhead">
+            <div class="formhead_count">
+                <span>1</span>
+            </div>
+            <h3>Basic Details</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+            <div class="formfield mb-2">
+                <mat-label>Room No.</mat-label>
+                <mat-form-field appearance="outline" class="w-full">
+                    <input matInput placeholder="Enter room number" value="101">
+                </mat-form-field>
+            </div>
 
+            <div class="formfield mb-2">
+                <mat-label>Room Type</mat-label>
+                <mat-form-field appearance="outline" class="w-full">
+                    <input matInput placeholder="Enter room type (eg: 2BHK, 3BHK etc.)">
+                </mat-form-field>
+            </div>
+
+            <div class="formfield mb-2">
+                <mat-label>Area</mat-label>
+                <mat-form-field appearance="outline" class="w-full">
+                    <input matInput placeholder="Enter room area in sq.ft" value="1200 sq.ft">
+                </mat-form-field>
+            </div>
+
+            <div class="formfield mb-2">
+                <mat-label>Furnishing Status</mat-label>
+                <mat-form-field appearance="outline" class="w-full">
+                    <input matInput placeholder="Enter furnishing status" value="Fully Furnished">
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+
+    <div class="formgroup">
+        <div class="formhead">
+            <div class="formhead_count">
+                <span>2</span>
+            </div>
+            <h3>Financial Details</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+            <div class="formfield mb-2 w-full">
+                <mat-label>Rent Amount</mat-label>
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Enter rent amount" value="₹15,000">
+                </mat-form-field>
+            </div>
+
+            <div class="formfield mb-2 w-full">
+                <mat-label>Deposit Amount</mat-label>
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Enter deposit amount" value="₹15,000">
+                </mat-form-field>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="formgroup">
+        <div class="formhead">
+            <div class="formhead_count">
+                <span>3</span>
+            </div>
+            <h3>Occupancy Details</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+            <div class="formfield mb-2 w-full">
+                <mat-label>Status</mat-label>
+                <mat-form-field appearance="outline">
+                    <mat-select>
+                        <mat-option value="occupied">Occupied</mat-option>
+                        <mat-option value="vacant">Vacant</mat-option>
+                        <mat-option value="reserved">Reserved</mat-option>
+                        <mat-option value="maintenance">Under Maintenance</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+            <div class="formfield mb-2 w-full">
+                <mat-label>Tenant Name</mat-label>
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Enter tenant name">
+                </mat-form-field>
+            </div>
+
+            <div class="formfield mb-2 w-full">
+                <mat-label>Lease Start Date</mat-label>
+                <mat-form-field appearance="outline">
+                    <input matInput [matDatepicker]="picker">
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+            </div>
+
+            <div class="formfield mb-2 w-full">
+                <mat-label>Lease End Date</mat-label>
+                <mat-form-field appearance="outline">
+                    <input matInput [matDatepicker]="picker">
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+            </div>
+
+        </div>
+    </div>
 
 </div>
 
 <div mat-dialog-actions align="end">
-
-
+    <button mat-flat-button cdkFocusInitial class="">
+        <span class="btnlabel">Update</span>
+    </button>
 </div>

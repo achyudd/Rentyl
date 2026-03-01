@@ -1,3 +1,5 @@
+
+
 /* MAT FLAT BUTTON */
 .mat-mdc-unelevated-button {
     background-color: var(--accent-color) !important;
@@ -152,4 +154,20 @@
 .mdc-button:disabled .btnicon,
 .mdc-button.mdc-button--disabled .btnicon {
     color: var(--s-text-color) !important;
+}
+
+.mat-mdc-icon-button.dialogclosebtn {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+    width: 30px !important;
+    height: 30px !important;
+    padding: 6px !important;
+}
+
+.mat-mdc-icon-button.dialogclosebtn .mat-icon {
+    color: var(--text-color) !important;
+    font-size: 18px;
 }
