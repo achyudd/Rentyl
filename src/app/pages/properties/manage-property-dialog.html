@@ -8,6 +8,42 @@
 <div mat-dialog-content>
 
     <div class="formgroup">
+        <div class="image_preview_container">
+            <!-- <div class="noimage">
+                    <mat-icon>photo_library</mat-icon>
+                    <span>Add Images</span>
+            </div> -->
+            <div class="image_chips_container grid grid-cols-2 md:grid-cols-3 gap-2">
+                <div class="image_chip">
+                    <button class="remove_chip">
+                        <mat-icon>close</mat-icon>
+                    </button>
+                    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" alt="">
+                </div>
+                 <div class="image_chip">
+                     <button class="remove_chip">
+                        <mat-icon>close</mat-icon>
+                    </button>
+                    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" alt="">
+                </div>
+                 <div class="image_chip">
+                     <button class="remove_chip">
+                        <mat-icon>close</mat-icon>
+                    </button>
+                    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="image_upload">
+            <button mat-flat-button class="w-full accentlightbtn">
+                <span class="btnlabel">Upload Room Images</span>
+            </button>
+        </div>
+
+    </div>
+
+
+    <div class="formgroup">
         <div class="formhead">
             <div class="formhead_count">
                 <span>1</span>
