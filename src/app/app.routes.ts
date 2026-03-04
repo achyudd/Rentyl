@@ -18,7 +18,8 @@ export const routes: Routes = [
 
   {
     path: 'login',
-    component: LoginComponent
+    component: LoginComponent,
+    data: { title: 'Login' }
   },
 
   {
@@ -29,17 +30,65 @@ export const routes: Routes = [
 
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
 
-      { path: 'dashboard', component: DashboardComponent },
-      { path: 'properties', component: PropertiesComponent },
-      { path: 'tenants', component: TenantsComponent },
-      { path: 'rents-and-payments', component: RentsAndPaymentsComponent },
-      { path: 'expenses', component: ExpensesComponent },
-      { path: 'maintenance', component: MaintenanceComponent },
-      { path: 'reports', component: ReportsComponent },
-      { path: 'documents', component: DocumentsComponent },
-      { path: 'settings', component: SettingsComponent },
+      {
+        path: 'dashboard',
+        component: DashboardComponent,
+        data: { title: 'Dashboard' }
+      },
 
-      { path: 'property-view', component: PropertyViewComponent }
+      {
+        path: 'properties',
+        component: PropertiesComponent,
+        data: { title: 'Properties' }
+      },
+
+      {
+        path: 'tenants',
+        component: TenantsComponent,
+        data: { title: 'Tenants' }
+      },
+
+      {
+        path: 'rents-and-payments',
+        component: RentsAndPaymentsComponent,
+        data: { title: 'Rents & Payments' }
+      },
+
+      {
+        path: 'expenses',
+        component: ExpensesComponent,
+        data: { title: 'Expenses' }
+      },
+
+      {
+        path: 'maintenance',
+        component: MaintenanceComponent,
+        data: { title: 'Maintenance' }
+      },
+
+      {
+        path: 'reports',
+        component: ReportsComponent,
+        data: { title: 'Reports' }
+      },
+
+      {
+        path: 'documents',
+        component: DocumentsComponent,
+        data: { title: 'Documents' }
+      },
+
+      {
+        path: 'settings',
+        component: SettingsComponent,
+        data: { title: 'Settings' }
+      },
+
+      {
+        path: 'property-view',
+        component: PropertyViewComponent,
+        data: { title: 'Property View' }
+      }
 
     ]
   },
