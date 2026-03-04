@@ -699,6 +699,7 @@ body {
 .room_details_value {
     font-size: 14px;
     font-weight: 500;
+    color: var(--text-color);
 }
 
 .room_details_value.room_rent_amnt {
@@ -897,6 +898,39 @@ body {
     color: var(--btntext-color);
 }
 
+.tenant_details_container{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    background-color: var(--purebg-color);
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid var(--border-medium-color) !important;
+}
+
+.tenant_detail_item {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--border-medium-color);
+    padding-bottom: 8px;
+}
+
+.tenant_detail_item:last-child {
+    border-bottom: none;
+}
+
+.tenat_detail_label {
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--s-text-color);
+}
+
+.tenant_detail_value {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: var(--text-color);
+}
 
 // MEDIA QUERIES 
 

@@ -62,6 +62,13 @@ export class PropertyViewComponent {
         });
     }
 
+
+    tenantDetails() {
+        const dialogrRef = this.dialog.open(TenantDetailsComponent, {
+            width: '500px',
+        });
+    }
+
 }
 
 
@@ -94,5 +101,21 @@ export class ManagePropertyDialogComponent {
             (this.currentImageIndex - 1 + this.roomImages.length) %
             this.roomImages.length;
     }
+
+}
+
+
+
+@Component({
+    selector: 'app-tenant-details-dialog',
+    standalone: true,
+    imports: [
+        ...MATERIAL_IMPORTS,
+    ],
+    templateUrl: './tenant-details-dialog.html',
+    styleUrl: './properties.component.scss'
+})
+export class TenantDetailsComponent {
+
 
 }

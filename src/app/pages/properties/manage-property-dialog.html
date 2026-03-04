@@ -75,7 +75,11 @@
             <div class="formfield mb-2">
                 <mat-label>Furnishing Status</mat-label>
                 <mat-form-field appearance="outline" class="w-full">
-                    <input matInput placeholder="Enter furnishing status" value="Fully Furnished">
+                    <mat-select>
+                          <mat-option value="occupied">Fully Furnished</mat-option>
+                          <mat-option value="reserved">Partially Furnished</mat-option>
+                        <mat-option value="vacant">Unfurnished</mat-option>
+                    </mat-select>
                 </mat-form-field>
             </div>
         </div>
