@@ -803,6 +803,8 @@ body {
 .formhead_count {
     width: 32px;
     height: 32px;
+    min-width: 32px;
+    min-height: 32px;
     border-radius: 50%;
     background-color: var(--accent-color);
     display: flex;
@@ -939,6 +941,26 @@ body {
     .propertycard_wrapper {
         grid-template-columns: 1fr;
     }
+
+    .formhead_count {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    min-height: 28px;
+    border-radius: 50%;
+}
+
+.formhead_count span {
+    font-size: 12px;
+}
+
+.formhead{
+    gap: 8px;
+}
+
+.formhead h3{
+    font-size: 14px;
+}
 
 }
 

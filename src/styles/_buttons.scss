@@ -1,4 +1,10 @@
+.mdc-button{
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-family: inherit !important;
 
+}
 
 /* MAT FLAT BUTTON */
 .mat-mdc-unelevated-button {
@@ -8,6 +14,7 @@
     min-width: fit-content !important;
     border-radius: 6px !important;
     cursor: pointer;
+    transition: 0.3s ease !important;
 }
 
 .mat-mdc-unelevated-button .mdc-button__label {
@@ -39,6 +46,7 @@
     color: var(--text-color) !important;
     width: 40px !important;
     height: 40px !important;
+    transition: 0.3s ease !important;
 }
 
 .mat-mdc-icon-button .mat-icon {
@@ -49,12 +57,16 @@
 .mat-mdc-icon-button:hover {
     background-color: var(--hover-color) !important;
     color: var(--text-color) !important;
+    transition: 0.3s ease !important;
+
 }
 
 /* Accent Light Flat */
 .mat-mdc-unelevated-button.accentlightbtn {
     background-color: var(--accent-light-color) !important;
     color: var(--accent-color) !important;
+    transition: 0.3s ease !important;
+
 }
 
 .mat-mdc-unelevated-button.accentlightbtn .mdc-button__label {
@@ -70,6 +82,8 @@
 .mat-mdc-unelevated-button.secondarylightbtn {
     background-color: var(--hover2-color) !important;
     color: var(--text-color) !important;
+    transition: 0.3s ease !important;
+
 }
 
 .mat-mdc-unelevated-button.secondarylightbtn .mdc-button__label {
@@ -81,11 +95,62 @@
     font-size: 20px;
 }
 
+/* TEXTBTN Flat */
+.mat-mdc-unelevated-button.textbtn {
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+    transition: 0.3s ease !important;
+}
+
+.mat-mdc-unelevated-button.textbtn .mdc-button__label {
+    color: var(--text-color) !important;
+}
+
+.mat-mdc-unelevated-button.textbtn .btnicon {
+    color: var(--text-color) !important;
+    font-size: 20px;
+}
+
+/* TEXTBTN outlined */
+.mat-mdc-outlined-button.textbtn {
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+    transition: 0.3s ease !important;
+}
+
+.mat-mdc-outlined-button.textbtn .mdc-button__label {
+    color: var(--text-color) !important;
+}
+
+.mat-mdc-outlined-button.textbtn .btnicon {
+    color: var(--text-color) !important;
+    font-size: 20px;
+}
+
+/* TEXTBTN icon */
+.mat-mdc-icon-button.textbtn {
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+    transition: 0.3s ease !important;
+}
+
+.mat-mdc-icon-button.textbtn .mdc-button__label {
+    color: var(--text-color) !important;
+}
+
+.mat-mdc-icon-button.textbtn .btnicon {
+    color: var(--text-color) !important;
+    font-size: 20px;
+}
+
+
+
 /* MAT STROKED BUTTON */
 .mat-mdc-outlined-button {
     padding-inline: 12px !important;
     min-width: fit-content !important;
     cursor: pointer;
+    transition: 0.3s ease !important;
 
     border: 2px solid var(--accent-color) !important;
     background-color: transparent !important;
@@ -101,15 +166,13 @@
     color: var(--accent-color) !important;
 }
 
-.mat-mdc-unelevated-button .btnicon {
-    color: var(--btntext-color) !important;
-    font-size: 20px;
-}
 
 .mat-mdc-outlined-button.normal_borderedbtn {
     border: 2px solid var(--border-xdark-color) !important;
     background-color: transparent !important;
     color: var(--text-color) !important;
+    transition: 0.3s ease !important;
+
 }
 
 .mat-mdc-outlined-button.normal_borderedbtn .mdc-button__label {
@@ -123,12 +186,16 @@
     padding-inline: 6px !important;
     min-width: fit-content !important;
     border-radius: 6px !important;
+    transition: 0.3s ease !important;
+
 }
 
 .mdc-button.backtobtn .mdc-button__label .btnicon {
     color: var(--text-color) !important;
     font-size: 20px;
 }
+
+
 
 /* ===== Disabled Button Style ===== */
 
@@ -165,9 +232,68 @@
     width: 30px !important;
     height: 30px !important;
     padding: 6px !important;
+    transition: 0.3s ease !important;
+
 }
 
 .mat-mdc-icon-button.dialogclosebtn .mat-icon {
     color: var(--text-color) !important;
     font-size: 18px;
 }
+
+.btnrounded_full {
+    border-radius: 9999px !important;
+}
+
+.mat-mdc-unelevated-button.roundedfull,
+.mat-mdc-outlined-button.roundedfull {
+    border-radius: 9999px !important;
+}
+
+.mat-mdc-unelevated-button.removebtn:hover,
+.mat-mdc-outlined-button.removebtn:hover,
+.mat-mdc-icon-button.removebtn:hover {
+    background-color: var(--red-light) !important;
+    transition: 0.3s ease !important;
+}
+
+
+.mat-mdc-button.removebtn .mdc-button__label,
+.mat-mdc-unelevated-button.removebtn .mdc-button__label,
+.mat-mdc-outlined-button.removebtn .mdc-button__label {
+    color: var(--red) !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+}
+
+.mat-mdc-button.removebtn .mat-icon.removeicon,
+.mat-mdc-unelevated-button.removebtn .mat-icon.removeicon,
+.mat-mdc-outlined-button.removebtn .mat-icon.removeicon,
+.mat-mdc-icon-button.removebtn .mat-icon.removeicon{
+    color: var(--red) !important;
+    font-size: 16px !important;
+}
+
+.removebtn.mob{
+    display: none !important;
+}
+
+@media (max-width: 639.98px) {
+
+.removebtn{
+    display: none !important;
+}
+
+.removebtn.mob{
+    display: flex !important;
+}
+
+}
+
+@media (min-width: 640px) and (max-width: 767.98px) {}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {}
+
+@media (min-width: 1024px) and (max-width: 1279.98px) {}
+
+@media (min-width: 1280px) and (max-width: 1535.98px) {}

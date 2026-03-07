@@ -20,14 +20,14 @@
                     </button>
                     <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" alt="">
                 </div>
-                 <div class="image_chip">
-                     <button class="remove_chip">
+                <div class="image_chip">
+                    <button class="remove_chip">
                         <mat-icon>close</mat-icon>
                     </button>
                     <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" alt="">
                 </div>
-                 <div class="image_chip">
-                     <button class="remove_chip">
+                <div class="image_chip">
+                    <button class="remove_chip">
                         <mat-icon>close</mat-icon>
                     </button>
                     <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" alt="">
@@ -76,8 +76,8 @@
                 <mat-label>Furnishing Status</mat-label>
                 <mat-form-field appearance="outline" class="w-full">
                     <mat-select>
-                          <mat-option value="occupied">Fully Furnished</mat-option>
-                          <mat-option value="reserved">Partially Furnished</mat-option>
+                        <mat-option value="occupied">Fully Furnished</mat-option>
+                        <mat-option value="reserved">Partially Furnished</mat-option>
                         <mat-option value="vacant">Unfurnished</mat-option>
                     </mat-select>
                 </mat-form-field>
@@ -113,10 +113,21 @@
 
     <div class="formgroup">
         <div class="formhead">
-            <div class="formhead_count">
-                <span>3</span>
+            <div class="formhead">
+                <div class="formhead_count">
+                    <span>3</span>
+                </div>
+                <h3>Occupancy Details</h3>
             </div>
-            <h3>Occupancy Details</h3>
+            <div class="ml-auto">
+                <button mat-flat-button class="textbtn roundedfull removebtn">
+                    <mat-icon class="removeicon">clear_all</mat-icon>
+                    <span class="btnlabel">Remove Tenant</span>
+                </button>
+                <button mat-icon-button class="textbtn roundedfull removebtn mob">
+                    <mat-icon class="removeicon">clear_all</mat-icon>
+                </button>
+            </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
             <div class="formfield mb-2 w-full">
@@ -141,20 +152,20 @@
             <div class="formfield mb-2 w-full">
                 <mat-label>Lease Start Date</mat-label>
                 <mat-form-field appearance="outline">
-                    <input matInput [matDatepicker]="picker">
+                    <input matInput [matDatepicker]="startDate">
                     <mat-hint>MM/DD/YYYY</mat-hint>
-                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-                    <mat-datepicker #picker></mat-datepicker>
+                    <mat-datepicker-toggle matIconSuffix [for]="startDate"></mat-datepicker-toggle>
+                    <mat-datepicker #startDate></mat-datepicker>
                 </mat-form-field>
             </div>
 
             <div class="formfield mb-2 w-full">
                 <mat-label>Lease End Date</mat-label>
                 <mat-form-field appearance="outline">
-                    <input matInput [matDatepicker]="picker">
+                    <input matInput [matDatepicker]="endDate">
                     <mat-hint>MM/DD/YYYY</mat-hint>
-                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-                    <mat-datepicker #picker></mat-datepicker>
+                    <mat-datepicker-toggle matIconSuffix [for]="endDate"></mat-datepicker-toggle>
+                    <mat-datepicker #endDate></mat-datepicker>
                 </mat-form-field>
             </div>
 
