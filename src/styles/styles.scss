@@ -969,6 +969,12 @@ body {
     .propertycard_wrapper {
         grid-template-columns: 1fr 1fr;
     }
+
+    .property_view_card{
+            width: 260px;
+    min-width: 260px;
+    max-width: 260px;
+    }
 }
 
 /* md only */
