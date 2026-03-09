@@ -14,3 +14,13 @@
 .mat-mdc-cell.text-right {
     text-align: right !important;
 }
+
+.mat-mdc-header-cell{
+    color: var(--text-color);
+   border-bottom-color: var(--border-light-color) !important;
+}
+
+.mat-mdc-cell{
+    color: var(--text-color);
+   border-bottom-color: var(--border-light-color) !important;
+}
