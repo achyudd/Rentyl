@@ -1,0 +1,16 @@
+.mat-mdc-table thead {
+    position: sticky;
+    top: 0;
+}
+
+.mat-mdc-table {
+    border-radius: 20px !important;
+    overflow: hidden;
+    box-shadow: none !important;
+    background-color: var(--purebg-color) !important;
+}
+
+.mat-mdc-header-cell.text-right,
+.mat-mdc-cell.text-right {
+    text-align: right !important;
+}

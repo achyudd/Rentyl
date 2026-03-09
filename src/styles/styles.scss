@@ -7,6 +7,7 @@
 @use './matdialog';
 @use './datepicker';
 @use './buttons';
+@use './mattable';
 
 // Plus imports for other components in your app.
 
@@ -932,6 +933,47 @@ body {
     line-height: 1.5;
     font-weight: 500;
     color: var(--text-color);
+}
+
+.py_history_month{
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.py_history_name{
+    font-size: 14px;
+    color: var(--s-text-color);
+    font-weight: 500;
+}
+
+.py_history_status{
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.py_history_status.paid{
+    color: var(--green) !important;
+}
+
+.py_history_status.pending{
+    color: var(--orange) !important;
+}
+
+.py_history_status.overdue{
+    color: var(--red) !important;
+}
+
+.py_history_amount{
+    font-size: 12px;
+    color: var(--s-text-color) !important;
+    font-weight: 500;
+}
+
+.table_wrapper{
+    width: 100%;
+    border-radius: 20px;
 }
 
 // MEDIA QUERIES 

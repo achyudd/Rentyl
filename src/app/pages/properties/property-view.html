@@ -1,5 +1,5 @@
 <section class="property_view_section">
-    
+
     <div class="backto_panel_header">
         <button mat-icon-button class="backtobtn" routerLink="/properties">
             <mat-icon class="btnicon">
@@ -110,11 +110,17 @@
                                         <span class="room_details_value room_rent_amnt">₹25,000 / month</span>
                                     </div>
 
-                                    <div class="detail-box">
-                                        <span class="room_details_label">Payment Status</span>
-                                        <span class="room_details_value payment_status paid">Paid</span>
-                                        <!-- <span class="room_details_value payment_status due">Due</span>
+                                    <div class="flex items-center justify-between gap-2">
+                                        <div class="detail-box">
+                                            <span class="room_details_label">Payment Status</span>
+                                            <span class="room_details_value payment_status paid">Paid</span>
+                                            <!-- <span class="room_details_value payment_status due">Due</span>
                                         <span class="room_details_value payment_status overdue">Overdue</span> -->
+                                        </div>
+                                        <button mat-icon-button class="" matTooltip="Payment history"
+                                            (click)="viewPaymentHistory()">
+                                            <mat-icon>history</mat-icon>
+                                        </button>
                                     </div>
 
                                     <div class="detail-box">
@@ -122,11 +128,17 @@
                                         <span class="room_details_value">₹75,000</span>
                                     </div>
 
-                                    <div class="detail-box">
-                                        <span class="room_details_label">Tenant</span>
-                                        <span class="room_details_value safe_text" (click)="tenantDetails()">
-                                            <u class="cursor-pointer">Alvin Sabu</u>
-                                        </span>
+                                    <div class="flex items-center justify-between gap-2">
+                                        <div class="detail-box">
+                                            <span class="room_details_label">Tenant</span>
+                                            <span class="room_details_value safe_text" (click)="tenantDetails()">
+                                                <u class="cursor-pointer">Alvin Sabu</u>
+                                            </span>
+                                        </div>
+                                        <button mat-icon-button class="" matTooltip="Tenant Details"
+                                            (click)="tenantDetails()">
+                                            <mat-icon>arrow_outward</mat-icon>
+                                        </button>
                                     </div>
 
                                     <div class="detail-box">
