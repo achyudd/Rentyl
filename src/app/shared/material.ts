@@ -10,6 +10,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatTableModule} from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 // add more as needed
 
@@ -26,4 +27,5 @@ export const MATERIAL_IMPORTS = [
   MatDatepickerModule,
   MatNativeDateModule,
   MatTableModule,
+  MatPaginatorModule
 ];

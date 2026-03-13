@@ -3,6 +3,11 @@
     color: var(--text-color) !important;
 }
 
+.mat-mdc-dialog-container .mat-mdc-dialog-content{
+    display: flex !important;
+    flex-direction: column !important;
+}
+
 .mat-mdc-dialog-title::before {
     content: none !important;
 }
