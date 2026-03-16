@@ -1,5 +1,5 @@
 import { NgIf } from '@angular/common';
-import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MATERIAL_IMPORTS } from '../../shared/material';
 import { RouterLink, RouterLinkActive } from "@angular/router";
@@ -20,12 +20,20 @@ import { RouterLink, RouterLinkActive } from "@angular/router";
 export class SidebarComponent implements OnInit {
 
   isCollapsed = false;
+  isMobile = false;
 
   @Input() currentTheme: 'light' | 'dark' = 'light';
   @Output() themeToggle = new EventEmitter<void>();
 
   ngOnInit() {
-    if (window.innerWidth < 640) {
+    this.checkScreen();
+  }
+
+  @HostListener('window:resize')
+  checkScreen() {
+    this.isMobile = window.innerWidth < 640;
+
+    if (this.isMobile) {
       this.isCollapsed = true;
     }
   }
@@ -34,12 +42,10 @@ export class SidebarComponent implements OnInit {
     this.themeToggle.emit();
   }
 
-  railMenu(){
-    this.isCollapsed = !this.isCollapsed;
-  }
-
-  onPropertiesClick(){
-
+  railMenu() {
+    if (this.isMobile) {
+      this.isCollapsed = !this.isCollapsed;
+    }
   }
 
 }
