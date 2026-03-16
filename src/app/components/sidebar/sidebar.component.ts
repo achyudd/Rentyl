@@ -25,9 +25,12 @@ export class SidebarComponent implements OnInit {
   @Input() currentTheme: 'light' | 'dark' = 'light';
   @Output() themeToggle = new EventEmitter<void>();
 
-  ngOnInit() {
-    this.checkScreen();
+ngOnInit() {
+  if (window.innerWidth < 640) {
+    this.isCollapsed = true;
   }
+}
+
 
   @HostListener('window:resize')
   checkScreen() {
@@ -42,10 +45,12 @@ export class SidebarComponent implements OnInit {
     this.themeToggle.emit();
   }
 
-  railMenu() {
-    if (this.isMobile) {
-      this.isCollapsed = !this.isCollapsed;
-    }
+railMenu() {
+  if (window.innerWidth >= 640) {
+    this.isCollapsed = !this.isCollapsed;
   }
+}
+
+
 
 }
