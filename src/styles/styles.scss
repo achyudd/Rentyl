@@ -227,10 +227,12 @@ main {
     flex-direction: column;
     height: 100%;
     width: 100%;
-    padding-inline: 20px;
-    padding-block: 10px 0px;
+    // padding-inline: 20px;
+    padding-block: 0px 0px;
+    // padding-block: 10px 0px;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
     overflow-x: hidden;
+    background-color: var(--secondary-bg-color);
 }
 
 .content {
@@ -241,6 +243,9 @@ main {
     /* stop page scroll */
     min-height: 0;
     padding-top: 8px;
+    padding-inline: 20px;
+    background-color: var(--bg-color);
+    border-top-left-radius: 20px;
 }
 
 // html, body { height: 100%; }
@@ -344,6 +349,8 @@ body {
 
 .mat-mdc-card.property_card {
     background-color: var(--bg-color) !important;
+    // background-color: var(--secondary-bg-color) !important;
+
     box-shadow: none !important;
     transition:
         background-color 0.3s ease,

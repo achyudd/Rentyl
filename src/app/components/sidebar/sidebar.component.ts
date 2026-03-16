@@ -22,7 +22,7 @@ import { RouterLinkActive } from "@angular/router";
 export class SidebarComponent {
 
 
-  isCollapsed = true;
+  isCollapsed = false;
 
   @Input() currentTheme: 'light' | 'dark' = 'light';
 
