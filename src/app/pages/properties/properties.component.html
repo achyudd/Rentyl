@@ -4,7 +4,6 @@
 
         <!-- CONTROLS ROW  -->
         <div class="flex justify-between items-end gap-3 mt-2 mb-3">
-            <div class="flex justify-start items-end mr-auto">
                 <div class="flex flex-col">
                     <mat-label>Select location</mat-label>
                     <mat-form-field appearance="outline">
@@ -19,16 +18,15 @@
                         </mat-select>
                     </mat-form-field>
                 </div>
-            </div>
-            <div class="flex justify-end items-end gap-3 ml-auto">
-                <mat-form-field appearance="outline">
-                    <input matInput placeholder="Search properties">
-                </mat-form-field>
+                <div class="flex items-end gap-3 ml-auto  w-full md:w-2/6 lg:w-2/6">
+                    <mat-form-field appearance="outline" class="searchwidth">
+                        <input matInput placeholder="Search properties">
+                    </mat-form-field>
+                </div>
                 <button mat-flat-button>
                     <mat-icon class="btnicon">add</mat-icon>
                     <span class="btnlabel">Add Property</span>
                 </button>
-            </div>
         </div>
 
         <!-- CARD CONTAINER  -->

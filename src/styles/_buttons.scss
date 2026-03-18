@@ -12,7 +12,7 @@
     color: var(--btntext-color) !important;
     padding-inline: 12px !important;
     min-width: fit-content !important;
-    border-radius: 6px !important;
+    border-radius: 8px !important;
     cursor: pointer;
     transition: 0.3s ease !important;
 }
@@ -159,7 +159,7 @@
     border: 2px solid var(--accent-color) !important;
     background-color: transparent !important;
     color: var(--accent-color) !important;
-    border-radius: 6px !important;
+    border-radius: 8px !important;
 }
 
 .mat-mdc-outlined-button .mdc-button__label {
@@ -189,7 +189,7 @@
     color: var(--text-color) !important;
     padding-inline: 6px !important;
     min-width: fit-content !important;
-    border-radius: 6px !important;
+    border-radius: 8px !important;
     transition: 0.3s ease !important;
 
 }
@@ -237,7 +237,6 @@
     height: 30px !important;
     padding: 6px !important;
     transition: 0.3s ease !important;
-
 }
 
 .mat-mdc-icon-button.dialogclosebtn .mat-icon {
@@ -254,6 +253,8 @@
     border-radius: 9999px !important;
 }
 
+
+// REMOVE BUTTON 
 .mat-mdc-unelevated-button.removebtn:hover,
 .mat-mdc-outlined-button.removebtn:hover,
 .mat-mdc-icon-button.removebtn:hover {
@@ -261,6 +262,11 @@
     transition: 0.3s ease !important;
 }
 
+.mat-mdc-outlined-button.removebtn {
+    border-color: var(--red) !important;
+    border-width: 1px !important;
+    height: 32px !important;
+}
 
 .mat-mdc-button.removebtn .mdc-button__label,
 .mat-mdc-unelevated-button.removebtn .mdc-button__label,
@@ -281,6 +287,41 @@
 .removebtn.mob{
     display: none !important;
 }
+// REMOVE BUTTON END 
+
+
+// VIEW BUTTON 
+.mat-mdc-unelevated-button.viewbtn:hover,
+.mat-mdc-outlined-button.viewbtn:hover,
+.mat-mdc-icon-button.viewbtn:hover {
+    background-color: var(--secondary-bg-color) !important;
+    transition: 0.3s ease !important;
+}
+
+.mat-mdc-outlined-button.viewbtn {
+    border-color: var(--border-dark-color) !important;
+    border-width: 1px !important;
+    height: 32px !important;
+}
+
+.mat-mdc-button.viewbtn .mdc-button__label,
+.mat-mdc-unelevated-button.viewbtn .mdc-button__label,
+.mat-mdc-outlined-button.viewbtn .mdc-button__label {
+    color: var(--text-color) !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+}
+
+.mat-mdc-button.viewbtn .mat-icon.viewicon,
+.mat-mdc-unelevated-button.viewbtn .mat-icon.viewicon,
+.mat-mdc-outlined-button.viewbtn .mat-icon.viewicon,
+.mat-mdc-icon-button.viewbtn .mat-icon.viewicon{
+       color: var(--text-color) !important;
+    font-size: 16px !important;
+}
+
+// VIEW BUTTON END 
+
 
 @media (max-width: 639.98px) {
 

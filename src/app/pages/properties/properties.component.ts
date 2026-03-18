@@ -127,38 +127,32 @@ export class TenantDetailsComponent {
 }
 
 
-export interface PeriodicElement {
-  month: string; 
-  name: string;     // Changed from monthname to match template
-  status: string; 
-  amount: string;    // Changed from statusamount to match template
-}
 
-const ELEMENT_DATA: PeriodicElement[] = [
-  {month: '2 January 2026', name: 'Alvin Sabu', status: 'Paid', amount: '$1200'},
-  {month: '2 February 2026', name: 'Alvin Sabu', status: 'Paid', amount: '$1200'},
-  {month: '2 March 2026', name: 'Alvin Sabu', status: 'Pending', amount: '$1200'},
-  {month: '2 April 2026', name: 'Alvin Sabu', status: 'Paid', amount: '$1200'},
-  {month: '2 May 2026', name: 'Alvin Sabu', status: 'Overdue', amount: '$1200'},
-];
 
 @Component({
-    selector: 'app-payment-history-dialog',
-    standalone: true,
-    imports: [
-        ...MATERIAL_IMPORTS,
-        CommonModule
-    ],
-    templateUrl: './payment-history-dialog.html',
-    styleUrl: './properties.component.scss'
+  selector: 'app-payment-history-dialog',
+  standalone: true,
+  imports: [...MATERIAL_IMPORTS, CommonModule],
+  templateUrl: './payment-history-dialog.html',
+  styleUrl: './properties.component.scss'
 })
 export class PaymentHistoryComponent {
-    displayedColumns: string[] = ['month', 'status']; // Column identifiers
-    
-    // Add header definitions to match the column IDs
-    // These will be used in the template
-    monthColumn = 'month';
-    statusColumn = 'status';
-    
-    dataSource = ELEMENT_DATA;
+
+  displayedColumns: string[] = ['month', 'status'];
+
+  dataSource: {
+    month: string;
+    name: string;
+    status: string;
+    amount: string;
+  }[] = [
+    {month: '2 January 2026', name: 'Alvin Sabu', status: 'Paid', amount: '$1200'},
+    {month: '2 February 2026', name: 'Alvin Sabu', status: 'Paid', amount: '$1200'},
+    {month: '2 March 2026', name: 'Alvin Sabu', status: 'Pending', amount: '$1200'},
+    {month: '2 April 2026', name: 'Alvin Sabu', status: 'Paid', amount: '$1200'},
+    {month: '2 May 2026', name: 'Alvin Sabu', status: 'Overdue', amount: '$1200'},
+  ];
+
+  monthColumn = 'month';
+  statusColumn = 'status';
 }

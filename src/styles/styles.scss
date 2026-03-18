@@ -994,6 +994,44 @@ body {
 
 }
 
+.searchwidth{
+    width: 100%;
+    max-width: 100%;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #6c5ce7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.tenant_status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    min-width: 70px;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.tenant_status.active {
+    background: var(--active-light-color);
+    color: var(--active-color) !important;
+}
+
+.tenant_status.inactive {
+    background: var(--notactive-light-color);
+    color: var(--notactive-color) !important;
+}
 
 
 // MEDIA QUERIES 

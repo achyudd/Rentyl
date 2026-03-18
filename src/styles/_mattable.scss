@@ -5,7 +5,11 @@
 
 .mat-mdc-table {
     box-shadow: none !important;
-    background-color: var(--purebg-color) !important;
+    background-color: var(--table) !important;
+}
+
+.mat-mdc-dialog-container .mat-mdc-dialog-content .mat-mdc-table {
+    background-color: var(--table) !important;
 }
 
 .mat-mdc-header-cell.text-right,
@@ -13,12 +17,22 @@
     text-align: right !important;
 }
 
-.mat-mdc-header-cell{
+.mat-mdc-dialog-container .mat-mdc-dialog-content .mat-mdc-header-cell {
     color: var(--text-color);
-   border-bottom-color: var(--border-light-color) !important;
+    border-bottom-color: var(--border-light-color) !important;
 }
 
-.mat-mdc-cell{
+.mat-mdc-dialog-container .mat-mdc-dialog-content .mat-mdc-cell {
     color: var(--text-color);
-   border-bottom-color: var(--border-light-color) !important;
+    border-bottom-color: var(--border-light-color) !important;
+}
+
+.mat-mdc-header-cell {
+    color: var(--text-color);
+    border-bottom-color: var(--border-table) !important;
+}
+
+.mat-mdc-cell {
+    color: var(--text-color);
+    border-bottom-color: var(--border-table) !important;
 }
